@@ -8,10 +8,9 @@ from tqdm import tqdm
 import tensorflow as tf
 from utils import utility
 import utils.constants as cs
-from models.vae import ConVAE
 import matplotlib.pyplot as plt
 from utils import os_utils, cv_utils
-from tensorflow.python.tools import freeze_graph
+from models.auto_enocder_1 import ConvAutoEncoder1 as ConVAE
 
 
 def iterate_videos(path, input_format):
@@ -38,7 +37,8 @@ def iterate_videos(path, input_format):
 
 
 def get_batch(video_path):
-    batch_x = utility.prepare_batch_frames(video_path)
+    # batch_x = utility.prepare_batch_frames(video_path)
+    batch_x = utility.prepare_batch_frames_from_bg_data(video_path)
     return batch_x
 
 
@@ -79,13 +79,12 @@ def write_summaries(model_object):
 
 def train():
     loading = False
-    logs_path = cs.BASE_LOG_PATH + cs.MODEL_VAE
+    logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
     tf.reset_default_graph()
-    vae = ConVAE()
-    vae.build_model()
-    epochs = 12
-    noise = 0.8
-    merged_summary_op = write_summaries(vae)
+    cae = ConVAE()
+    cae.build_model()
+    epochs = 150
+    merged_summary_op = write_summaries(cae)
     sess = tf.Session()
     saver = tf.train.Saver(max_to_keep=10)
 
@@ -108,8 +107,8 @@ def train():
 
     for e in tqdm(range(checkpoint_number, checkpoint_number+epochs)):
         print()
-        path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH+cs.DATA_TRAIN_VIDEOS, "mp4")
-        batch_counter = 1
+        path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH+cs.DATA_BG_TRAIN_VIDEO, "mp4")
+        batch_counter = 0
         start_time = time.time()
 
         for video_path in path_generator:
@@ -127,10 +126,9 @@ def train():
                 print("video number =", batch_counter, "..... batch_x.shape", batch_x.shape,
                       " loop_counter =", checkpoint_number + loop_counter)
 
-                g_loss, l_loss, _, summary = sess.run([vae.generation_loss, vae.latent_loss, vae.opt, merged_summary_op],
-                                                      feed_dict={vae.inputs_: batch_x,
-                                                                 vae.targets_: batch_x.copy(),
-                                                                 vae.noise_var: noise})
+                batch_loss, _, summary = sess.run([cae.loss, cae.opt, merged_summary_op],
+                                                  feed_dict={cae.inputs_: batch_x,
+                                                             cae.targets_: batch_x.copy()})
 
             # ==============================
             # Write logs at every iteration
@@ -138,9 +136,7 @@ def train():
             summary_writer.add_summary(summary, checkpoint_number + loop_counter)
 
             print("Epoch: {}/{}...".format(e+1-checkpoint_number, epochs),
-                  "Generation loss: {:.4f}".format(np.mean(g_loss)),
-                  "Latent loss: {:.4f}".format(np.mean(l_loss)),
-                  "Total loss: {:.4f}".format(np.mean(l_loss) + np.mean(g_loss)))
+                  "Training loss: {:.4f}".format(batch_loss))
 
             # if batch_counter % 2 == 0:
             #     print("saving the model at epoch", checkpoint_number + loop_counter)
@@ -149,13 +145,13 @@ def train():
 
             batch_counter += 1
             loop_counter += 1
-            if batch_counter == 2:
+            if batch_counter == 420:
                 end_time = time.time()
                 print("==============================================================================================")
                 print("Epoch Number", e, "has ended in", end_time-start_time, "seconds for", batch_counter, "videos")
                 print("==============================================================================================")
 
-                break
+                # break
 
         if e % 10 == 0:
             print("################################################")
@@ -168,13 +164,14 @@ def train():
     # Freeze the session graph
     # =========================
     # freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path), cae)
+    cae.process_node_names()
     utility.freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path),
-                         vae, "encoder_train.pb", cs.VAE_FREEZED_PB_NAME)
+                         cae, "encoder_train.pb", cs.ENCODER1_FREEZED_PB_NAME)
 
     print("Run the command line:\n--> tensorboard --logdir={}".format(logs_path),
           "\nThen open http://0.0.0.0:6006/ into your web browser")
 
-    path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH, "mp4")
+    path_generator = os_utils.iterate_test_data(cs.BASE_DATA_PATH+cs.DATA_BG_TRAIN_VIDEO, "mp4")
 
     for video_path in path_generator:
         test_frame = get_batch(video_path)
@@ -182,7 +179,7 @@ def train():
         if test_frame is not None:
 
             test_frame = test_frame[20:40, :, :, :]
-            reconstructed = sess.run(vae.decoded, feed_dict={vae.inputs_: test_frame})
+            reconstructed = sess.run(cae.decoded, feed_dict={cae.inputs_: test_frame})
             display_reconstruction_results(test_frame, reconstructed)
 
             break
