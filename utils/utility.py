@@ -1,5 +1,6 @@
 import os
 import cv2
+import random
 import imageio
 import numpy as np
 import tensorflow as tf
@@ -62,6 +63,36 @@ def prepare_batch_frames(video_path):
         frame_batch = np.vstack((frame_batch, reshaped_img))
 
     frame_batch = frame_batch.reshape(frame_batch.shape[0], 240, 240, 1)
+    frame_batch = frame_batch[2:, :, :, :]
+
+    return frame_batch
+
+
+def prepare_batch_frames_from_bg_data(video_path, frame_limit=109, resize=(240, 240)):
+    sampling = False
+    video = imageio.get_reader(video_path, 'ffmpeg')
+    frame_batch = np.zeros(resize)
+    frame_batch = frame_batch.reshape((1, resize[0], resize[1]))
+    if frame_limit < len(video):
+        sampling = True
+        sampling_list = random.sample(range(0, len(video)-1), frame_limit)
+
+    for i in range(len(video)):
+        if sampling and i not in sampling_list:
+            continue
+        frame = video.get_data(i)
+        red_channel = frame[:, :, 0]
+        red_channel = cv_utils.resize(red_channel, resize)
+        red_channel[red_channel > 0] == 255.0
+        red_channel = red_channel / 255.0
+        cv2.imshow("bg_subtraction", red_channel)
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+            break
+
+        red_channel = red_channel.reshape((1, resize[0], resize[1]))
+        frame_batch = np.vstack((frame_batch, red_channel))
+
+    frame_batch = frame_batch.reshape(frame_batch.shape[0], resize[0], resize[1], 1)
     frame_batch = frame_batch[2:, :, :, :]
 
     return frame_batch
@@ -207,14 +238,49 @@ def read_video(video_path):
         detect_person(frame)
 
 
+def maxpool_layer(x, filter_w):
+    return tf.nn.max_pool(x, ksize=[1, filter_w, filter_w, 1], strides=[1, 1, 1, 1], padding='SAME')
+
+
+def maxpool_stride_layer(x, filter_w, s):
+    return tf.nn.max_pool(x, ksize=[1, filter_w, filter_w, 1], strides=[1, s, s, 1], padding='VALID')
+
+
+def conv_layer(x, filter_w, in_d, out_d, is_relu, mu=0.0, sigma=0.1):
+    conv_w = tf.Variable(tf.truncated_normal(shape=(filter_w, filter_w, in_d, out_d), mean=mu, stddev=sigma))
+    conv_b = tf.Variable(tf.zeros(out_d))
+    conv_res = tf.nn.conv2d(x, conv_w, strides=[1, 1, 1, 1], padding='SAME') + conv_b
+    if is_relu:
+        return tf.nn.leaky_relu(conv_res)
+    else:
+        return conv_res
+
+
+# def apply_inception(x, in_d, out_d, name):
+def apply_inception(x, in_d, out_d):
+
+    d_1x1 = 32
+    conv1x1 = conv_layer(x, 1, in_d, out_d, True)
+    conv2 = conv_layer(x, 1, in_d, d_1x1, True)
+    conv3 = conv_layer(x, 1, in_d, d_1x1, True)
+    maxpool = maxpool_layer(x, 3)
+    conv_maxpool = conv_layer(maxpool, 1, in_d, out_d, False)
+    conv3x3 = conv_layer(conv2, 3, d_1x1, int(out_d//2), False)
+    conv3x3 = conv_layer(conv3x3, 1, int(out_d//2), out_d, False)
+    conv5x5 = conv_layer(conv3, 5, d_1x1, int(out_d//2), False)
+    conv5x5 = conv_layer(conv5x5, 1, int(out_d//2), out_d, False)
+    # return tf.nn.leaky_relu(tf.concat([conv1x1, conv3x3, conv5x5, conv_maxpool], 3), name=name)
+    return tf.nn.leaky_relu(tf.concat([conv1x1, conv3x3, conv5x5, conv_maxpool], 3))
+
+
 if __name__ == '__main__':
     fg_bg = cv2.createBackgroundSubtractorMOG2()
     IMAGE_SIZE = (12, 8)
 
-    path_gen = os_utils.iterate_data(cs.BASE_DATA_PATH + cs.DATA_TRAIN_VIDEOS, ".mp4")
-
-    for path in path_gen:
-        write_videos(path, cs.DATA_TRAIN_VIDEOS, cs.DATA_BG_TRAIN_VIDEO)
+    # path_gen = os_utils.iterate_data(cs.BASE_DATA_PATH + cs.DATA_TRAIN_VIDEOS, ".mp4")
+    #
+    # for path in path_gen:
+    #     write_videos(path, cs.DATA_TRAIN_VIDEOS, cs.DATA_BG_TRAIN_VIDEO)
 
     path_gen = os_utils.iterate_test_data(cs.BASE_DATA_PATH + cs.DATA_TEST_VIDEOS, ".mp4")
     for path in path_gen:

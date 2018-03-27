@@ -1,0 +1,1264 @@
+# video number = 0 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62581
+# Epoch: 150/150... Training loss: 0.0709
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_001_002.mp4
+# video number = 1 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62582
+# Epoch: 150/150... Training loss: 0.0982
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_001_003.mp4
+# video number = 2 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62583
+# Epoch: 150/150... Training loss: 0.1779
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_002_001.mp4
+# video number = 3 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62584
+# Epoch: 150/150... Training loss: 0.2162
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_002_002.mp4
+# video number = 4 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62585
+# Epoch: 150/150... Training loss: 0.0842
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_002_003.mp4
+# video number = 5 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62586
+# Epoch: 150/150... Training loss: 0.0737
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_003_001.mp4
+# video number = 6 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62587
+# Epoch: 150/150... Training loss: 0.2255
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_003_002.mp4
+# video number = 7 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62588
+# Epoch: 150/150... Training loss: 0.1020
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_003_003.mp4
+# video number = 8 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62589
+# Epoch: 150/150... Training loss: 0.0844
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_004_001.mp4
+# video number = 9 ..... batch_x.shape (83, 240, 240, 1)  loop_counter = 62590
+# Epoch: 150/150... Training loss: 0.1924
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_004_002.mp4
+# video number = 10 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62591
+# Epoch: 150/150... Training loss: 0.1099
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_004_003.mp4
+# video number = 11 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62592
+# Epoch: 150/150... Training loss: 0.1002
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_005_001.mp4
+# video number = 12 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62593
+# Epoch: 150/150... Training loss: 0.2261
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_005_002.mp4
+# video number = 13 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62594
+# Epoch: 150/150... Training loss: 0.1738
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_005_003.mp4
+# video number = 14 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62595
+# Epoch: 150/150... Training loss: 0.1541
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_006_001.mp4
+# video number = 15 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62596
+# Epoch: 150/150... Training loss: 0.1549
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_006_002.mp4
+# video number = 16 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62597
+# Epoch: 150/150... Training loss: 0.1263
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_006_003.mp4
+# video number = 17 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62598
+# Epoch: 150/150... Training loss: 0.0976
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_007_001.mp4
+# video number = 18 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62599
+# Epoch: 150/150... Training loss: 0.1274
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_007_002.mp4
+# video number = 19 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62600
+# Epoch: 150/150... Training loss: 0.1071
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_007_003.mp4
+# video number = 20 ..... batch_x.shape (86, 240, 240, 1)  loop_counter = 62601
+# Epoch: 150/150... Training loss: 0.0948
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_008_001.mp4
+# video number = 21 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62602
+# Epoch: 150/150... Training loss: 0.1617
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_008_002.mp4
+# video number = 22 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62603
+# Epoch: 150/150... Training loss: 0.1223
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_008_003.mp4
+# video number = 23 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62604
+# Epoch: 150/150... Training loss: 0.1701
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_009_001.mp4
+# video number = 24 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62605
+# Epoch: 150/150... Training loss: 0.0836
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_009_002.mp4
+# video number = 25 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62606
+# Epoch: 150/150... Training loss: 0.0681
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_009_003.mp4
+# video number = 26 ..... batch_x.shape (31, 240, 240, 1)  loop_counter = 62607
+# Epoch: 150/150... Training loss: 0.0641
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_010_001.mp4
+# video number = 27 ..... batch_x.shape (83, 240, 240, 1)  loop_counter = 62608
+# Epoch: 150/150... Training loss: 0.1341
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_010_002.mp4
+# video number = 28 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62609
+# Epoch: 150/150... Training loss: 0.0987
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/01/001_010_003.mp4
+# video number = 29 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62610
+# Epoch: 150/150... Training loss: 0.0731
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_001_001.mp4
+# video number = 30 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62611
+# Epoch: 150/150... Training loss: 0.0972
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_001_002.mp4
+# video number = 31 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62612
+# Epoch: 150/150... Training loss: 0.0848
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_001_003.mp4
+# video number = 32 ..... batch_x.shape (61, 240, 240, 1)  loop_counter = 62613
+# Epoch: 150/150... Training loss: 0.0776
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_002_001.mp4
+# video number = 33 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62614
+# Epoch: 150/150... Training loss: 0.1595
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_002_002.mp4
+# video number = 34 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62615
+# Epoch: 150/150... Training loss: 0.1068
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_002_003.mp4
+# video number = 35 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62616
+# Epoch: 150/150... Training loss: 0.0899
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_003_001.mp4
+# video number = 36 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62617
+# Epoch: 150/150... Training loss: 0.1084
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_003_002.mp4
+# video number = 37 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62618
+# Epoch: 150/150... Training loss: 0.0863
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_003_003.mp4
+# video number = 38 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62619
+# Epoch: 150/150... Training loss: 0.0824
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_004_001.mp4
+# video number = 39 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62620
+# Epoch: 150/150... Training loss: 0.0948
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_004_002.mp4
+# video number = 40 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62621
+# Epoch: 150/150... Training loss: 0.0789
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_004_003.mp4
+# video number = 41 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62622
+# Epoch: 150/150... Training loss: 0.0776
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_005_001.mp4
+# video number = 42 ..... batch_x.shape (82, 240, 240, 1)  loop_counter = 62623
+# Epoch: 150/150... Training loss: 0.1562
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_005_002.mp4
+# video number = 43 ..... batch_x.shape (95, 240, 240, 1)  loop_counter = 62624
+# Epoch: 150/150... Training loss: 0.0983
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_005_003.mp4
+# video number = 44 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62625
+# Epoch: 150/150... Training loss: 0.1273
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_006_001.mp4
+# video number = 45 ..... batch_x.shape (91, 240, 240, 1)  loop_counter = 62626
+# Epoch: 150/150... Training loss: 0.1241
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_006_002.mp4
+# video number = 46 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62627
+# Epoch: 150/150... Training loss: 0.0995
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_006_003.mp4
+# video number = 47 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62628
+# Epoch: 150/150... Training loss: 0.0957
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_007_001.mp4
+# video number = 48 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62629
+# Epoch: 150/150... Training loss: 0.1111
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_007_002.mp4
+# video number = 49 ..... batch_x.shape (58, 240, 240, 1)  loop_counter = 62630
+# Epoch: 150/150... Training loss: 0.0925
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_007_003.mp4
+# video number = 50 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62631
+# Epoch: 150/150... Training loss: 0.0832
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_008_001.mp4
+# video number = 51 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62632
+# Epoch: 150/150... Training loss: 0.1070
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_008_002.mp4
+# video number = 52 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62633
+# Epoch: 150/150... Training loss: 0.1867
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_008_003.mp4
+# video number = 53 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62634
+# Epoch: 150/150... Training loss: 0.1067
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_009_001.mp4
+# video number = 54 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62635
+# Epoch: 150/150... Training loss: 0.1121
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_009_002.mp4
+# video number = 55 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62636
+# Epoch: 150/150... Training loss: 0.0954
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_009_003.mp4
+# video number = 56 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62637
+# Epoch: 150/150... Training loss: 0.0790
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_010_001.mp4
+# video number = 57 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62638
+# Epoch: 150/150... Training loss: 0.1061
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_010_002.mp4
+# video number = 58 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62639
+# Epoch: 150/150... Training loss: 0.0674
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/02/002_010_003.mp4
+# video number = 59 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62640
+# Epoch: 150/150... Training loss: 0.0712
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_001_001.mp4
+# video number = 60 ..... batch_x.shape (61, 240, 240, 1)  loop_counter = 62641
+# Epoch: 150/150... Training loss: 0.0914
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_001_002.mp4
+# video number = 61 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62642
+# Epoch: 150/150... Training loss: 0.0785
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_001_003.mp4
+# video number = 62 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62643
+# Epoch: 150/150... Training loss: 0.0770
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_002_001.mp4
+# video number = 63 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62644
+# Epoch: 150/150... Training loss: 0.1491
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_002_002.mp4
+# video number = 64 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62645
+# Epoch: 150/150... Training loss: 0.1042
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_002_003.mp4
+# video number = 65 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62646
+# Epoch: 150/150... Training loss: 0.0938
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_003_001.mp4
+# video number = 66 ..... batch_x.shape (79, 240, 240, 1)  loop_counter = 62647
+# Epoch: 150/150... Training loss: 0.0880
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_003_002.mp4
+# video number = 67 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62648
+# Epoch: 150/150... Training loss: 0.0688
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_003_003.mp4
+# video number = 68 ..... batch_x.shape (89, 240, 240, 1)  loop_counter = 62649
+# Epoch: 150/150... Training loss: 0.0666
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_004_001.mp4
+# video number = 69 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62650
+# Epoch: 150/150... Training loss: 0.0939
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_004_002.mp4
+# video number = 70 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62651
+# Epoch: 150/150... Training loss: 0.0750
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_004_003.mp4
+# video number = 71 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62652
+# Epoch: 150/150... Training loss: 0.0679
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_005_001.mp4
+# video number = 72 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62653
+# Epoch: 150/150... Training loss: 0.1537
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_005_002.mp4
+# video number = 73 ..... batch_x.shape (86, 240, 240, 1)  loop_counter = 62654
+# Epoch: 150/150... Training loss: 0.1053
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_005_003.mp4
+# video number = 74 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62655
+# Epoch: 150/150... Training loss: 0.0694
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_006_001.mp4
+# video number = 75 ..... batch_x.shape (79, 240, 240, 1)  loop_counter = 62656
+# Epoch: 150/150... Training loss: 0.1140
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_006_002.mp4
+# video number = 76 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62657
+# Epoch: 150/150... Training loss: 0.0903
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_006_003.mp4
+# video number = 77 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62658
+# Epoch: 150/150... Training loss: 0.0768
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_007_001.mp4
+# video number = 78 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62659
+# Epoch: 150/150... Training loss: 0.1001
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_007_002.mp4
+# video number = 79 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62660
+# Epoch: 150/150... Training loss: 0.0851
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_007_003.mp4
+# video number = 80 ..... batch_x.shape (52, 240, 240, 1)  loop_counter = 62661
+# Epoch: 150/150... Training loss: 0.0877
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_008_001.mp4
+# video number = 81 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62662
+# Epoch: 150/150... Training loss: 0.1118
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_008_002.mp4
+# video number = 82 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62663
+# Epoch: 150/150... Training loss: 0.0719
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_008_003.mp4
+# video number = 83 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62664
+# Epoch: 150/150... Training loss: 0.0706
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_009_001.mp4
+# video number = 84 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62665
+# Epoch: 150/150... Training loss: 0.1189
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_009_002.mp4
+# video number = 85 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62666
+# Epoch: 150/150... Training loss: 0.0947
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_009_003.mp4
+# video number = 86 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62667
+# Epoch: 150/150... Training loss: 0.0802
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_010_001.mp4
+# video number = 87 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62668
+# Epoch: 150/150... Training loss: 0.1080
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_010_002.mp4
+# video number = 88 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62669
+# Epoch: 150/150... Training loss: 0.0773
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/03/003_010_003.mp4
+# video number = 89 ..... batch_x.shape (49, 240, 240, 1)  loop_counter = 62670
+# Epoch: 150/150... Training loss: 0.0713
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_001_001.mp4
+# video number = 90 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62671
+# Epoch: 150/150... Training loss: 0.1455
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_001_002.mp4
+# video number = 91 ..... batch_x.shape (38, 240, 240, 1)  loop_counter = 62672
+# Epoch: 150/150... Training loss: 0.1298
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_001_003.mp4
+# video number = 92 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62673
+# Epoch: 150/150... Training loss: 0.1160
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_002_001.mp4
+# video number = 93 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62674
+# Epoch: 150/150... Training loss: 0.1514
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_002_002.mp4
+# video number = 94 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62675
+# Epoch: 150/150... Training loss: 0.1329
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_002_003.mp4
+# video number = 95 ..... batch_x.shape (61, 240, 240, 1)  loop_counter = 62676
+# Epoch: 150/150... Training loss: 0.1032
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_003_001.mp4
+# video number = 96 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62677
+# Epoch: 150/150... Training loss: 0.1241
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_003_002.mp4
+# video number = 97 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62678
+# Epoch: 150/150... Training loss: 0.1130
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_003_003.mp4
+# video number = 98 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62679
+# Epoch: 150/150... Training loss: 0.1026
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_004_001.mp4
+# video number = 99 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62680
+# Epoch: 150/150... Training loss: 0.1386
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_004_002.mp4
+# video number = 100 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62681
+# Epoch: 150/150... Training loss: 0.1166
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_004_003.mp4
+# video number = 101 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62682
+# Epoch: 150/150... Training loss: 0.1034
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_005_001.mp4
+# video number = 102 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62683
+# Epoch: 150/150... Training loss: 0.1989
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_005_002.mp4
+# video number = 103 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62684
+# Epoch: 150/150... Training loss: 0.1641
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_005_003.mp4
+# video number = 104 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62685
+# Epoch: 150/150... Training loss: 0.1308
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_006_001.mp4
+# video number = 105 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62686
+# Epoch: 150/150... Training loss: 0.1227
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_006_002.mp4
+# video number = 106 ..... batch_x.shape (79, 240, 240, 1)  loop_counter = 62687
+# Epoch: 150/150... Training loss: 0.0955
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_006_003.mp4
+# video number = 107 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62688
+# Epoch: 150/150... Training loss: 0.0841
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_007_001.mp4
+# video number = 108 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62689
+# Epoch: 150/150... Training loss: 0.1371
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_007_002.mp4
+# video number = 109 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62690
+# Epoch: 150/150... Training loss: 0.0988
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_007_003.mp4
+# video number = 110 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62691
+# Epoch: 150/150... Training loss: 0.0846
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_008_001.mp4
+# video number = 111 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62692
+# Epoch: 150/150... Training loss: 0.1372
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_008_002.mp4
+# video number = 112 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62693
+# Epoch: 150/150... Training loss: 0.0930
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_008_003.mp4
+# video number = 113 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62694
+# Epoch: 150/150... Training loss: 0.0839
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_009_001.mp4
+# video number = 114 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62695
+# Epoch: 150/150... Training loss: 0.1229
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_009_002.mp4
+# video number = 115 ..... batch_x.shape (43, 240, 240, 1)  loop_counter = 62696
+# Epoch: 150/150... Training loss: 0.0914
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_009_003.mp4
+# video number = 116 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62697
+# Epoch: 150/150... Training loss: 0.0813
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_010_001.mp4
+# video number = 117 ..... batch_x.shape (43, 240, 240, 1)  loop_counter = 62698
+# Epoch: 150/150... Training loss: 0.1291
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_010_002.mp4
+# video number = 118 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62699
+# Epoch: 150/150... Training loss: 0.0948
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/04/004_010_003.mp4
+# video number = 119 ..... batch_x.shape (52, 240, 240, 1)  loop_counter = 62700
+# Epoch: 150/150... Training loss: 0.0790
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_001_001.mp4
+# video number = 120 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62701
+# Epoch: 150/150... Training loss: 0.1047
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_001_002.mp4
+# video number = 121 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62702
+# Epoch: 150/150... Training loss: 0.0999
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_001_003.mp4
+# video number = 122 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62703
+# Epoch: 150/150... Training loss: 0.0873
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_002_001.mp4
+# video number = 123 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62704
+# Epoch: 150/150... Training loss: 0.1073
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_002_002.mp4
+# video number = 124 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62705
+# Epoch: 150/150... Training loss: 0.0876
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_002_003.mp4
+# video number = 125 ..... batch_x.shape (82, 240, 240, 1)  loop_counter = 62706
+# Epoch: 150/150... Training loss: 0.0798
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_003_001.mp4
+# video number = 126 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62707
+# Epoch: 150/150... Training loss: 0.1005
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_003_002.mp4
+# video number = 127 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62708
+# Epoch: 150/150... Training loss: 0.0757
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_003_003.mp4
+# video number = 128 ..... batch_x.shape (95, 240, 240, 1)  loop_counter = 62709
+# Epoch: 150/150... Training loss: 0.0785
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_004_001.mp4
+# video number = 129 ..... batch_x.shape (83, 240, 240, 1)  loop_counter = 62710
+# Epoch: 150/150... Training loss: 0.0954
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_004_002.mp4
+# video number = 130 ..... batch_x.shape (95, 240, 240, 1)  loop_counter = 62711
+# Epoch: 150/150... Training loss: 0.0720
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_004_003.mp4
+# video number = 131 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62712
+# Epoch: 150/150... Training loss: 0.0864
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_005_001.mp4
+# video number = 132 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62713
+# Epoch: 150/150... Training loss: 0.1272
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_005_002.mp4
+# video number = 133 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62714
+# Epoch: 150/150... Training loss: 0.0958
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_005_003.mp4
+# video number = 134 ..... batch_x.shape (95, 240, 240, 1)  loop_counter = 62715
+# Epoch: 150/150... Training loss: 0.0667
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_006_001.mp4
+# video number = 135 ..... batch_x.shape (97, 240, 240, 1)  loop_counter = 62716
+# Epoch: 150/150... Training loss: 0.1064
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_006_002.mp4
+# video number = 136 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62717
+# Epoch: 150/150... Training loss: 0.0795
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_006_003.mp4
+# video number = 137 ..... batch_x.shape (95, 240, 240, 1)  loop_counter = 62718
+# Epoch: 150/150... Training loss: 0.0763
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_007_001.mp4
+# video number = 138 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62719
+# Epoch: 150/150... Training loss: 0.1033
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_007_002.mp4
+# video number = 139 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62720
+# Epoch: 150/150... Training loss: 0.0680
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_007_003.mp4
+# video number = 140 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62721
+# Epoch: 150/150... Training loss: 0.0595
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_008_001.mp4
+# video number = 141 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62722
+# Epoch: 150/150... Training loss: 0.1562
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_008_002.mp4
+# video number = 142 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62723
+# Epoch: 150/150... Training loss: 0.1027
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_008_003.mp4
+# video number = 143 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62724
+# Epoch: 150/150... Training loss: 0.0997
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_009_001.mp4
+# video number = 144 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62725
+# Epoch: 150/150... Training loss: 0.1331
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_009_002.mp4
+# video number = 145 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62726
+# Epoch: 150/150... Training loss: 0.0869
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_009_003.mp4
+# video number = 146 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62727
+# Epoch: 150/150... Training loss: 0.0803
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_010_001.mp4
+# video number = 147 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62728
+# Epoch: 150/150... Training loss: 0.0943
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_010_002.mp4
+# video number = 148 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62729
+# Epoch: 150/150... Training loss: 0.0625
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/05/005_010_003.mp4
+# video number = 149 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62730
+# Epoch: 150/150... Training loss: 0.0560
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_001_001.mp4
+# video number = 150 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62731
+# Epoch: 150/150... Training loss: 0.1393
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_001_002.mp4
+# video number = 151 ..... batch_x.shape (106, 240, 240, 1)  loop_counter = 62732
+# Epoch: 150/150... Training loss: 0.1048
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_001_003.mp4
+# video number = 152 ..... batch_x.shape (103, 240, 240, 1)  loop_counter = 62733
+# Epoch: 150/150... Training loss: 0.0869
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_002_001.mp4
+# video number = 153 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62734
+# Epoch: 150/150... Training loss: 0.1664
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_002_002.mp4
+# video number = 154 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62735
+# Epoch: 150/150... Training loss: 0.1090
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_002_003.mp4
+# video number = 155 ..... batch_x.shape (95, 240, 240, 1)  loop_counter = 62736
+# Epoch: 150/150... Training loss: 0.0978
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_003_001.mp4
+# video number = 156 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62737
+# Epoch: 150/150... Training loss: 0.1321
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_003_002.mp4
+# video number = 157 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62738
+# Epoch: 150/150... Training loss: 0.0728
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_003_003.mp4
+# video number = 158 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62739
+# Epoch: 150/150... Training loss: 0.0664
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_004_001.mp4
+# video number = 159 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62740
+# Epoch: 150/150... Training loss: 0.1227
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_004_002.mp4
+# video number = 160 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62741
+# Epoch: 150/150... Training loss: 0.0807
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_004_003.mp4
+# video number = 161 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62742
+# Epoch: 150/150... Training loss: 0.0729
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_005_001.mp4
+# video number = 162 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62743
+# Epoch: 150/150... Training loss: 0.2059
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_005_002.mp4
+# video number = 163 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62744
+# Epoch: 150/150... Training loss: 0.1463
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_005_003.mp4
+# video number = 164 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62745
+# Epoch: 150/150... Training loss: 0.1093
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_006_001.mp4
+# video number = 165 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62746
+# Epoch: 150/150... Training loss: 0.1108
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_006_002.mp4
+# video number = 166 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62747
+# Epoch: 150/150... Training loss: 0.0787
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_006_003.mp4
+# video number = 167 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62748
+# Epoch: 150/150... Training loss: 0.0760
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_007_001.mp4
+# video number = 168 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62749
+# Epoch: 150/150... Training loss: 0.1166
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_007_002.mp4
+# video number = 169 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62750
+# Epoch: 150/150... Training loss: 0.0913
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_007_003.mp4
+# video number = 170 ..... batch_x.shape (103, 240, 240, 1)  loop_counter = 62751
+# Epoch: 150/150... Training loss: 0.0820
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_008_001.mp4
+# video number = 171 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62752
+# Epoch: 150/150... Training loss: 0.1133
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_008_002.mp4
+# video number = 172 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62753
+# Epoch: 150/150... Training loss: 0.1179
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_008_003.mp4
+# video number = 173 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62754
+# Epoch: 150/150... Training loss: 0.0666
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_009_001.mp4
+# video number = 174 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62755
+# Epoch: 150/150... Training loss: 0.1324
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_009_002.mp4
+# video number = 175 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62756
+# Epoch: 150/150... Training loss: 0.0853
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_009_003.mp4
+# video number = 176 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62757
+# Epoch: 150/150... Training loss: 0.0725
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_010_001.mp4
+# video number = 177 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62758
+# Epoch: 150/150... Training loss: 0.1241
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_010_002.mp4
+# video number = 178 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62759
+# Epoch: 150/150... Training loss: 0.0827
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/06/006_010_003.mp4
+# video number = 179 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62760
+# Epoch: 150/150... Training loss: 0.0729
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_001_001.mp4
+# video number = 180 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62761
+# Epoch: 150/150... Training loss: 0.1224
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_001_002.mp4
+# video number = 181 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62762
+# Epoch: 150/150... Training loss: 0.0897
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_001_003.mp4
+# video number = 182 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62763
+# Epoch: 150/150... Training loss: 0.0905
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_002_001.mp4
+# video number = 183 ..... batch_x.shape (61, 240, 240, 1)  loop_counter = 62764
+# Epoch: 150/150... Training loss: 0.1460
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_002_002.mp4
+# video number = 184 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62765
+# Epoch: 150/150... Training loss: 0.1030
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_002_003.mp4
+# video number = 185 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62766
+# Epoch: 150/150... Training loss: 0.0835
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_003_001.mp4
+# video number = 186 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62767
+# Epoch: 150/150... Training loss: 0.1113
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_003_002.mp4
+# video number = 187 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62768
+# Epoch: 150/150... Training loss: 0.0726
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_003_003.mp4
+# video number = 188 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62769
+# Epoch: 150/150... Training loss: 0.0602
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_004_001.mp4
+# video number = 189 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62770
+# Epoch: 150/150... Training loss: 0.0909
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_004_002.mp4
+# video number = 190 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62771
+# Epoch: 150/150... Training loss: 0.0794
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_004_003.mp4
+# video number = 191 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62772
+# Epoch: 150/150... Training loss: 0.0718
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_005_001.mp4
+# video number = 192 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62773
+# Epoch: 150/150... Training loss: 0.1421
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_005_002.mp4
+# video number = 193 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62774
+# Epoch: 150/150... Training loss: 0.1343
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_005_003.mp4
+# video number = 194 ..... batch_x.shape (58, 240, 240, 1)  loop_counter = 62775
+# Epoch: 150/150... Training loss: 0.1120
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_006_001.mp4
+# video number = 195 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62776
+# Epoch: 150/150... Training loss: 0.1063
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_006_002.mp4
+# video number = 196 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62777
+# Epoch: 150/150... Training loss: 0.0866
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_006_003.mp4
+# video number = 197 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62778
+# Epoch: 150/150... Training loss: 0.0749
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_007_001.mp4
+# video number = 198 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62779
+# Epoch: 150/150... Training loss: 0.0954
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_007_002.mp4
+# video number = 199 ..... batch_x.shape (52, 240, 240, 1)  loop_counter = 62780
+# Epoch: 150/150... Training loss: 0.0797
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_007_003.mp4
+# video number = 200 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62781
+# Epoch: 150/150... Training loss: 0.0713
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_008_001.mp4
+# video number = 201 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62782
+# Epoch: 150/150... Training loss: 0.1095
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_008_002.mp4
+# video number = 202 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62783
+# Epoch: 150/150... Training loss: 0.0854
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_008_003.mp4
+# video number = 203 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62784
+# Epoch: 150/150... Training loss: 0.0630
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_009_001.mp4
+# video number = 204 ..... batch_x.shape (35, 240, 240, 1)  loop_counter = 62785
+# Epoch: 150/150... Training loss: 0.1088
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_009_002.mp4
+# video number = 205 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62786
+# Epoch: 150/150... Training loss: 0.1070
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_009_003.mp4
+# video number = 206 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62787
+# Epoch: 150/150... Training loss: 0.0835
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_010_001.mp4
+# video number = 207 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62788
+# Epoch: 150/150... Training loss: 0.1126
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_010_002.mp4
+# video number = 208 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62789
+# Epoch: 150/150... Training loss: 0.0790
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/07/007_010_003.mp4
+# video number = 209 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62790
+# Epoch: 150/150... Training loss: 0.0723
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_001_001.mp4
+# video number = 210 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62791
+# Epoch: 150/150... Training loss: 0.1257
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_001_002.mp4
+# video number = 211 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62792
+# Epoch: 150/150... Training loss: 0.1055
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_001_003.mp4
+# video number = 212 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62793
+# Epoch: 150/150... Training loss: 0.0903
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_002_001.mp4
+# video number = 213 ..... batch_x.shape (85, 240, 240, 1)  loop_counter = 62794
+# Epoch: 150/150... Training loss: 0.1062
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_002_002.mp4
+# video number = 214 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62795
+# Epoch: 150/150... Training loss: 0.0934
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_002_003.mp4
+# video number = 215 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62796
+# Epoch: 150/150... Training loss: 0.0851
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_003_001.mp4
+# video number = 216 ..... batch_x.shape (43, 240, 240, 1)  loop_counter = 62797
+# Epoch: 150/150... Training loss: 0.1109
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_003_002.mp4
+# video number = 217 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62798
+# Epoch: 150/150... Training loss: 0.1011
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_003_003.mp4
+# video number = 218 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62799
+# Epoch: 150/150... Training loss: 0.0938
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_004_001.mp4
+# video number = 219 ..... batch_x.shape (58, 240, 240, 1)  loop_counter = 62800
+# Epoch: 150/150... Training loss: 0.0999
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_004_002.mp4
+# video number = 220 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62801
+# Epoch: 150/150... Training loss: 0.0907
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_004_003.mp4
+# video number = 221 ..... batch_x.shape (52, 240, 240, 1)  loop_counter = 62802
+# Epoch: 150/150... Training loss: 0.0824
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_005_001.mp4
+# video number = 222 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62803
+# Epoch: 150/150... Training loss: 0.1399
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_005_002.mp4
+# video number = 223 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62804
+# Epoch: 150/150... Training loss: 0.1194
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_005_003.mp4
+# video number = 224 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62805
+# Epoch: 150/150... Training loss: 0.0997
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_006_001.mp4
+# video number = 225 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62806
+# Epoch: 150/150... Training loss: 0.1044
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_006_002.mp4
+# video number = 226 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62807
+# Epoch: 150/150... Training loss: 0.0913
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_006_003.mp4
+# video number = 227 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62808
+# Epoch: 150/150... Training loss: 0.0832
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_007_001.mp4
+# video number = 228 ..... batch_x.shape (43, 240, 240, 1)  loop_counter = 62809
+# Epoch: 150/150... Training loss: 0.0898
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_007_002.mp4
+# video number = 229 ..... batch_x.shape (25, 240, 240, 1)  loop_counter = 62810
+# Epoch: 150/150... Training loss: 0.0814
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_007_003.mp4
+# video number = 230 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62811
+# Epoch: 150/150... Training loss: 0.0822
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_008_001.mp4
+# video number = 231 ..... batch_x.shape (43, 240, 240, 1)  loop_counter = 62812
+# Epoch: 150/150... Training loss: 0.1184
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_008_002.mp4
+# video number = 232 ..... batch_x.shape (35, 240, 240, 1)  loop_counter = 62813
+# Epoch: 150/150... Training loss: 0.0827
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_008_003.mp4
+# video number = 233 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62814
+# Epoch: 150/150... Training loss: 0.0817
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_009_001.mp4
+# video number = 234 ..... batch_x.shape (31, 240, 240, 1)  loop_counter = 62815
+# Epoch: 150/150... Training loss: 0.1113
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_009_002.mp4
+# video number = 235 ..... batch_x.shape (31, 240, 240, 1)  loop_counter = 62816
+# Epoch: 150/150... Training loss: 0.1125
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_009_003.mp4
+# video number = 236 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62817
+# Epoch: 150/150... Training loss: 0.0802
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_010_001.mp4
+# video number = 237 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62818
+# Epoch: 150/150... Training loss: 0.1129
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_010_002.mp4
+# video number = 238 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62819
+# Epoch: 150/150... Training loss: 0.0876
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/08/008_010_003.mp4
+# video number = 239 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62820
+# Epoch: 150/150... Training loss: 0.0731
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_001_001.mp4
+# video number = 240 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62821
+# Epoch: 150/150... Training loss: 0.1247
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_001_002.mp4
+# video number = 241 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62822
+# Epoch: 150/150... Training loss: 0.1051
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_001_003.mp4
+# video number = 242 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62823
+# Epoch: 150/150... Training loss: 0.0899
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_002_001.mp4
+# video number = 243 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62824
+# Epoch: 150/150... Training loss: 0.1385
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_002_002.mp4
+# video number = 244 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62825
+# Epoch: 150/150... Training loss: 0.1024
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_002_003.mp4
+# video number = 245 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62826
+# Epoch: 150/150... Training loss: 0.0866
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_003_001.mp4
+# video number = 246 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62827
+# Epoch: 150/150... Training loss: 0.1076
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_003_002.mp4
+# video number = 247 ..... batch_x.shape (83, 240, 240, 1)  loop_counter = 62828
+# Epoch: 150/150... Training loss: 0.0775
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_003_003.mp4
+# video number = 248 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62829
+# Epoch: 150/150... Training loss: 0.0663
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_004_001.mp4
+# video number = 249 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62830
+# Epoch: 150/150... Training loss: 0.0965
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_004_002.mp4
+# video number = 250 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62831
+# Epoch: 150/150... Training loss: 0.1006
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_004_003.mp4
+# video number = 251 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62832
+# Epoch: 150/150... Training loss: 0.0753
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_005_001.mp4
+# video number = 252 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62833
+# Epoch: 150/150... Training loss: 0.1526
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_005_002.mp4
+# video number = 253 ..... batch_x.shape (97, 240, 240, 1)  loop_counter = 62834
+# Epoch: 150/150... Training loss: 0.1082
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_005_003.mp4
+# video number = 254 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62835
+# Epoch: 150/150... Training loss: 0.0911
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_006_001.mp4
+# video number = 255 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62836
+# Epoch: 150/150... Training loss: 0.1172
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_006_002.mp4
+# video number = 256 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62837
+# Epoch: 150/150... Training loss: 0.1030
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_006_003.mp4
+# video number = 257 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62838
+# Epoch: 150/150... Training loss: 0.0740
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_007_001.mp4
+# video number = 258 ..... batch_x.shape (82, 240, 240, 1)  loop_counter = 62839
+# Epoch: 150/150... Training loss: 0.1023
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_007_002.mp4
+# video number = 259 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62840
+# Epoch: 150/150... Training loss: 0.0763
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_007_003.mp4
+# video number = 260 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62841
+# Epoch: 150/150... Training loss: 0.0675
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_008_001.mp4
+# video number = 261 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62842
+# Epoch: 150/150... Training loss: 0.1117
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_008_002.mp4
+# video number = 262 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62843
+# Epoch: 150/150... Training loss: 0.0892
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_008_003.mp4
+# video number = 263 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62844
+# Epoch: 150/150... Training loss: 0.0878
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_009_001.mp4
+# video number = 264 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62845
+# Epoch: 150/150... Training loss: 0.0950
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_009_002.mp4
+# video number = 265 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62846
+# Epoch: 150/150... Training loss: 0.0651
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_009_003.mp4
+# video number = 266 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62847
+# Epoch: 150/150... Training loss: 0.0634
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_010_001.mp4
+# video number = 267 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62848
+# Epoch: 150/150... Training loss: 0.1160
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_010_002.mp4
+# video number = 268 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62849
+# Epoch: 150/150... Training loss: 0.0796
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/09/009_010_003.mp4
+# video number = 269 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62850
+# Epoch: 150/150... Training loss: 0.0647
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_001_001.mp4
+# video number = 270 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62851
+# Epoch: 150/150... Training loss: 0.0919
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_001_002.mp4
+# video number = 271 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62852
+# Epoch: 150/150... Training loss: 0.0859
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_001_003.mp4
+# video number = 272 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62853
+# Epoch: 150/150... Training loss: 0.0660
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_002_001.mp4
+# video number = 273 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62854
+# Epoch: 150/150... Training loss: 0.1299
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_002_002.mp4
+# video number = 274 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62855
+# Epoch: 150/150... Training loss: 0.0938
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_002_003.mp4
+# video number = 275 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62856
+# Epoch: 150/150... Training loss: 0.0700
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_003_001.mp4
+# video number = 276 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62857
+# Epoch: 150/150... Training loss: 0.0957
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_003_002.mp4
+# video number = 277 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62858
+# Epoch: 150/150... Training loss: 0.0735
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_003_003.mp4
+# video number = 278 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62859
+# Epoch: 150/150... Training loss: 0.0657
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_004_001.mp4
+# video number = 279 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62860
+# Epoch: 150/150... Training loss: 0.1040
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_004_002.mp4
+# video number = 280 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62861
+# Epoch: 150/150... Training loss: 0.0883
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_004_003.mp4
+# video number = 281 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62862
+# Epoch: 150/150... Training loss: 0.0802
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_005_001.mp4
+# video number = 282 ..... batch_x.shape (79, 240, 240, 1)  loop_counter = 62863
+# Epoch: 150/150... Training loss: 0.1584
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_005_002.mp4
+# video number = 283 ..... batch_x.shape (107, 240, 240, 1)  loop_counter = 62864
+# Epoch: 150/150... Training loss: 0.1850
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_005_003.mp4
+# video number = 284 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62865
+# Epoch: 150/150... Training loss: 0.1256
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_006_001.mp4
+# video number = 285 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62866
+# Epoch: 150/150... Training loss: 0.1126
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_006_002.mp4
+# video number = 286 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62867
+# Epoch: 150/150... Training loss: 0.0957
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_006_003.mp4
+# video number = 287 ..... batch_x.shape (49, 240, 240, 1)  loop_counter = 62868
+# Epoch: 150/150... Training loss: 0.0921
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_007_001.mp4
+# video number = 288 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62869
+# Epoch: 150/150... Training loss: 0.0869
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_007_002.mp4
+# video number = 289 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62870
+# Epoch: 150/150... Training loss: 0.0870
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_007_003.mp4
+# video number = 290 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62871
+# Epoch: 150/150... Training loss: 0.0757
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_008_001.mp4
+# video number = 291 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62872
+# Epoch: 150/150... Training loss: 0.1231
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_008_002.mp4
+# video number = 292 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62873
+# Epoch: 150/150... Training loss: 0.1252
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_008_003.mp4
+# video number = 293 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62874
+# Epoch: 150/150... Training loss: 0.1031
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_009_001.mp4
+# video number = 294 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62875
+# Epoch: 150/150... Training loss: 0.1259
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_009_002.mp4
+# video number = 295 ..... batch_x.shape (38, 240, 240, 1)  loop_counter = 62876
+# Epoch: 150/150... Training loss: 0.1034
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_009_003.mp4
+# video number = 296 ..... batch_x.shape (46, 240, 240, 1)  loop_counter = 62877
+# Epoch: 150/150... Training loss: 0.0851
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_010_001.mp4
+# video number = 297 ..... batch_x.shape (55, 240, 240, 1)  loop_counter = 62878
+# Epoch: 150/150... Training loss: 0.0988
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_010_002.mp4
+# video number = 298 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62879
+# Epoch: 150/150... Training loss: 0.0844
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/10/010_010_003.mp4
+# video number = 299 ..... batch_x.shape (58, 240, 240, 1)  loop_counter = 62880
+# Epoch: 150/150... Training loss: 0.0696
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_001_001.mp4
+# video number = 300 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62881
+# Epoch: 150/150... Training loss: 0.1004
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_001_002.mp4
+# video number = 301 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62882
+# Epoch: 150/150... Training loss: 0.1013
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_001_003.mp4
+# video number = 302 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62883
+# Epoch: 150/150... Training loss: 0.0969
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_002_001.mp4
+# video number = 303 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62884
+# Epoch: 150/150... Training loss: 0.1405
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_002_002.mp4
+# video number = 304 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62885
+# Epoch: 150/150... Training loss: 0.1021
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_002_003.mp4
+# video number = 305 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62886
+# Epoch: 150/150... Training loss: 0.1050
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_003_001.mp4
+# video number = 306 ..... batch_x.shape (64, 240, 240, 1)  loop_counter = 62887
+# Epoch: 150/150... Training loss: 0.1031
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_003_002.mp4
+# video number = 307 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62888
+# Epoch: 150/150... Training loss: 0.0787
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_003_003.mp4
+# video number = 308 ..... batch_x.shape (70, 240, 240, 1)  loop_counter = 62889
+# Epoch: 150/150... Training loss: 0.0722
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_004_001.mp4
+# video number = 309 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62890
+# Epoch: 150/150... Training loss: 0.1218
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_004_002.mp4
+# video number = 310 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62891
+# Epoch: 150/150... Training loss: 0.0927
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_004_003.mp4
+# video number = 311 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62892
+# Epoch: 150/150... Training loss: 0.0773
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_005_001.mp4
+# video number = 312 ..... batch_x.shape (26, 240, 240, 1)  loop_counter = 62893
+# Epoch: 150/150... Training loss: 0.1439
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_005_002.mp4
+# video number = 313 ..... batch_x.shape (28, 240, 240, 1)  loop_counter = 62894
+# Epoch: 150/150... Training loss: 0.1581
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_005_003.mp4
+# video number = 314 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62895
+# Epoch: 150/150... Training loss: 0.1049
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_006_001.mp4
+# video number = 315 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62896
+# Epoch: 150/150... Training loss: 0.1192
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_006_002.mp4
+# video number = 316 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62897
+# Epoch: 150/150... Training loss: 0.0877
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_006_003.mp4
+# video number = 317 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62898
+# Epoch: 150/150... Training loss: 0.0782
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_007_001.mp4
+# video number = 318 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62899
+# Epoch: 150/150... Training loss: 0.0995
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_007_002.mp4
+# video number = 319 ..... batch_x.shape (34, 240, 240, 1)  loop_counter = 62900
+# Epoch: 150/150... Training loss: 0.0826
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_007_003.mp4
+# video number = 320 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62901
+# Epoch: 150/150... Training loss: 0.0769
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_008_001.mp4
+# video number = 321 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62902
+# Epoch: 150/150... Training loss: 0.1337
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_008_002.mp4
+# video number = 322 ..... batch_x.shape (52, 240, 240, 1)  loop_counter = 62903
+# Epoch: 150/150... Training loss: 0.1075
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_008_003.mp4
+# video number = 323 ..... batch_x.shape (49, 240, 240, 1)  loop_counter = 62904
+# Epoch: 150/150... Training loss: 0.0933
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_009_001.mp4
+# video number = 324 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62905
+# Epoch: 150/150... Training loss: 0.1088
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_009_002.mp4
+# video number = 325 ..... batch_x.shape (34, 240, 240, 1)  loop_counter = 62906
+# Epoch: 150/150... Training loss: 0.1072
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_009_003.mp4
+# video number = 326 ..... batch_x.shape (34, 240, 240, 1)  loop_counter = 62907
+# Epoch: 150/150... Training loss: 0.0804
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_010_001.mp4
+# video number = 327 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62908
+# Epoch: 150/150... Training loss: 0.1072
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_010_002.mp4
+# video number = 328 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62909
+# Epoch: 150/150... Training loss: 0.0806
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/11/011_010_003.mp4
+# video number = 329 ..... batch_x.shape (25, 240, 240, 1)  loop_counter = 62910
+# Epoch: 150/150... Training loss: 0.0671
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_001_001.mp4
+# video number = 330 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62911
+# Epoch: 150/150... Training loss: 0.1032
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_001_002.mp4
+# video number = 331 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62912
+# Epoch: 150/150... Training loss: 0.0911
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_001_003.mp4
+# video number = 332 ..... batch_x.shape (61, 240, 240, 1)  loop_counter = 62913
+# Epoch: 150/150... Training loss: 0.0695
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_002_001.mp4
+# video number = 333 ..... batch_x.shape (106, 240, 240, 1)  loop_counter = 62914
+# Epoch: 150/150... Training loss: 0.1216
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_002_002.mp4
+# video number = 334 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62915
+# Epoch: 150/150... Training loss: 0.0892
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_002_003.mp4
+# video number = 335 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62916
+# Epoch: 150/150... Training loss: 0.0717
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_003_001.mp4
+# video number = 336 ..... batch_x.shape (88, 240, 240, 1)  loop_counter = 62917
+# Epoch: 150/150... Training loss: 0.0772
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_003_002.mp4
+# video number = 337 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62918
+# Epoch: 150/150... Training loss: 0.0529
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_003_003.mp4
+# video number = 338 ..... batch_x.shape (86, 240, 240, 1)  loop_counter = 62919
+# Epoch: 150/150... Training loss: 0.0510
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_004_001.mp4
+# video number = 339 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62920
+# Epoch: 150/150... Training loss: 0.0939
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_004_002.mp4
+# video number = 340 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62921
+# Epoch: 150/150... Training loss: 0.0626
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_004_003.mp4
+# video number = 341 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62922
+# Epoch: 150/150... Training loss: 0.0558
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_005_001.mp4
+# video number = 342 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62923
+# Epoch: 150/150... Training loss: 0.1262
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_005_002.mp4
+# video number = 343 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62924
+# Epoch: 150/150... Training loss: 0.0762
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_005_003.mp4
+# video number = 344 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62925
+# Epoch: 150/150... Training loss: 0.0677
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_006_001.mp4
+# video number = 345 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62926
+# Epoch: 150/150... Training loss: 0.1038
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_006_002.mp4
+# video number = 346 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62927
+# Epoch: 150/150... Training loss: 0.0689
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_006_003.mp4
+# video number = 347 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62928
+# Epoch: 150/150... Training loss: 0.0629
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_007_001.mp4
+# video number = 348 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62929
+# Epoch: 150/150... Training loss: 0.1201
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_007_002.mp4
+# video number = 349 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62930
+# Epoch: 150/150... Training loss: 0.0735
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_007_003.mp4
+# video number = 350 ..... batch_x.shape (67, 240, 240, 1)  loop_counter = 62931
+# Epoch: 150/150... Training loss: 0.0711
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_008_001.mp4
+# video number = 351 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62932
+# Epoch: 150/150... Training loss: 0.1070
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_008_002.mp4
+# video number = 352 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62933
+# Epoch: 150/150... Training loss: 0.0947
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_008_003.mp4
+# video number = 353 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62934
+# Epoch: 150/150... Training loss: 0.0928
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_009_001.mp4
+# video number = 354 ..... batch_x.shape (91, 240, 240, 1)  loop_counter = 62935
+# Epoch: 150/150... Training loss: 0.1031
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_009_002.mp4
+# video number = 355 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62936
+# Epoch: 150/150... Training loss: 0.0588
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_009_003.mp4
+# video number = 356 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62937
+# Epoch: 150/150... Training loss: 0.0546
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_010_001.mp4
+# video number = 357 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62938
+# Epoch: 150/150... Training loss: 0.1186
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_010_002.mp4
+# video number = 358 ..... batch_x.shape (73, 240, 240, 1)  loop_counter = 62939
+# Epoch: 150/150... Training loss: 0.0657
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/12/012_010_003.mp4
+# video number = 359 ..... batch_x.shape (83, 240, 240, 1)  loop_counter = 62940
+# Epoch: 150/150... Training loss: 0.0531
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_001_001.mp4
+# video number = 360 ..... batch_x.shape (98, 240, 240, 1)  loop_counter = 62941
+# Epoch: 150/150... Training loss: 0.0894
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_001_002.mp4
+# video number = 361 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62942
+# Epoch: 150/150... Training loss: 0.0666
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_001_003.mp4
+# video number = 362 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62943
+# Epoch: 150/150... Training loss: 0.0574
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_002_001.mp4
+# video number = 363 ..... batch_x.shape (34, 240, 240, 1)  loop_counter = 62944
+# Epoch: 150/150... Training loss: 0.1327
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_002_002.mp4
+# video number = 364 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62945
+# Epoch: 150/150... Training loss: 0.1058
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_002_003.mp4
+# video number = 365 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62946
+# Epoch: 150/150... Training loss: 0.0718
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_003_001.mp4
+# video number = 366 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62947
+# Epoch: 150/150... Training loss: 0.1086
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_003_002.mp4
+# video number = 367 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62948
+# Epoch: 150/150... Training loss: 0.0706
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_003_003.mp4
+# video number = 368 ..... batch_x.shape (68, 240, 240, 1)  loop_counter = 62949
+# Epoch: 150/150... Training loss: 0.0597
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_004_001.mp4
+# video number = 369 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62950
+# Epoch: 150/150... Training loss: 0.1109
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_004_002.mp4
+# video number = 370 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62951
+# Epoch: 150/150... Training loss: 0.0804
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_004_003.mp4
+# video number = 371 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62952
+# Epoch: 150/150... Training loss: 0.0881
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_005_001.mp4
+# video number = 372 ..... batch_x.shape (101, 240, 240, 1)  loop_counter = 62953
+# Epoch: 150/150... Training loss: 0.1275
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_005_002.mp4
+# video number = 373 ..... batch_x.shape (104, 240, 240, 1)  loop_counter = 62954
+# Epoch: 150/150... Training loss: 0.0784
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_005_003.mp4
+# video number = 374 ..... batch_x.shape (108, 240, 240, 1)  loop_counter = 62955
+# Epoch: 150/150... Training loss: 0.1589
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_006_001.mp4
+# video number = 375 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62956
+# Epoch: 150/150... Training loss: 0.1070
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_006_002.mp4
+# video number = 376 ..... batch_x.shape (83, 240, 240, 1)  loop_counter = 62957
+# Epoch: 150/150... Training loss: 0.0823
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_006_003.mp4
+# video number = 377 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62958
+# Epoch: 150/150... Training loss: 0.0772
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_007_001.mp4
+# video number = 378 ..... batch_x.shape (55, 240, 240, 1)  loop_counter = 62959
+# Epoch: 150/150... Training loss: 0.1006
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_007_002.mp4
+# video number = 379 ..... batch_x.shape (52, 240, 240, 1)  loop_counter = 62960
+# Epoch: 150/150... Training loss: 0.0783
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_007_003.mp4
+# video number = 380 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62961
+# Epoch: 150/150... Training loss: 0.0689
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_008_001.mp4
+# video number = 381 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62962
+# Epoch: 150/150... Training loss: 0.1734
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_008_002.mp4
+# video number = 382 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62963
+# Epoch: 150/150... Training loss: 0.1304
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_008_003.mp4
+# video number = 383 ..... batch_x.shape (80, 240, 240, 1)  loop_counter = 62964
+# Epoch: 150/150... Training loss: 0.0917
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_009_001.mp4
+# video number = 384 ..... batch_x.shape (92, 240, 240, 1)  loop_counter = 62965
+# Epoch: 150/150... Training loss: 0.0949
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_009_002.mp4
+# video number = 385 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62966
+# Epoch: 150/150... Training loss: 0.0659
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_009_003.mp4
+# video number = 386 ..... batch_x.shape (76, 240, 240, 1)  loop_counter = 62967
+# Epoch: 150/150... Training loss: 0.0601
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_010_001.mp4
+# video number = 387 ..... batch_x.shape (74, 240, 240, 1)  loop_counter = 62968
+# Epoch: 150/150... Training loss: 0.1046
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_010_002.mp4
+# video number = 388 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62969
+# Epoch: 150/150... Training loss: 0.0774
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/13/013_010_003.mp4
+# video number = 389 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62970
+# Epoch: 150/150... Training loss: 0.0681
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_001_001.mp4
+# video number = 390 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62971
+# Epoch: 150/150... Training loss: 0.0980
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_001_002.mp4
+# video number = 391 ..... batch_x.shape (32, 240, 240, 1)  loop_counter = 62972
+# Epoch: 150/150... Training loss: 0.0847
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_001_003.mp4
+# video number = 392 ..... batch_x.shape (32, 240, 240, 1)  loop_counter = 62973
+# Epoch: 150/150... Training loss: 0.0895
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_002_001.mp4
+# video number = 393 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62974
+# Epoch: 150/150... Training loss: 0.1430
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_002_002.mp4
+# video number = 394 ..... batch_x.shape (59, 240, 240, 1)  loop_counter = 62975
+# Epoch: 150/150... Training loss: 0.1226
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_002_003.mp4
+# video number = 395 ..... batch_x.shape (35, 240, 240, 1)  loop_counter = 62976
+# Epoch: 150/150... Training loss: 0.1021
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_003_001.mp4
+# video number = 396 ..... batch_x.shape (91, 240, 240, 1)  loop_counter = 62977
+# Epoch: 150/150... Training loss: 0.1000
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_003_002.mp4
+# video number = 397 ..... batch_x.shape (88, 240, 240, 1)  loop_counter = 62978
+# Epoch: 150/150... Training loss: 0.0820
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_003_003.mp4
+# video number = 398 ..... batch_x.shape (56, 240, 240, 1)  loop_counter = 62979
+# Epoch: 150/150... Training loss: 0.0719
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_004_001.mp4
+# video number = 399 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62980
+# Epoch: 150/150... Training loss: 0.1000
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_004_002.mp4
+# video number = 400 ..... batch_x.shape (47, 240, 240, 1)  loop_counter = 62981
+# Epoch: 150/150... Training loss: 0.0896
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_004_003.mp4
+# video number = 401 ..... batch_x.shape (62, 240, 240, 1)  loop_counter = 62982
+# Epoch: 150/150... Training loss: 0.0806
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_005_001.mp4
+# video number = 402 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62983
+# Epoch: 150/150... Training loss: 0.1573
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_005_002.mp4
+# video number = 403 ..... batch_x.shape (71, 240, 240, 1)  loop_counter = 62984
+# Epoch: 150/150... Training loss: 0.1351
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_005_003.mp4
+# video number = 404 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62985
+# Epoch: 150/150... Training loss: 0.1047
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_006_001.mp4
+# video number = 405 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62986
+# Epoch: 150/150... Training loss: 0.1155
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_006_002.mp4
+# video number = 406 ..... batch_x.shape (41, 240, 240, 1)  loop_counter = 62987
+# Epoch: 150/150... Training loss: 0.0907
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_006_003.mp4
+# video number = 407 ..... batch_x.shape (53, 240, 240, 1)  loop_counter = 62988
+# Epoch: 150/150... Training loss: 0.0880
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_007_001.mp4
+# video number = 408 ..... batch_x.shape (44, 240, 240, 1)  loop_counter = 62989
+# Epoch: 150/150... Training loss: 0.1243
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_007_002.mp4
+# video number = 409 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62990
+# Epoch: 150/150... Training loss: 0.1267
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_007_003.mp4
+# video number = 410 ..... batch_x.shape (29, 240, 240, 1)  loop_counter = 62991
+# Epoch: 150/150... Training loss: 0.0965
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_008_001.mp4
+# video number = 411 ..... batch_x.shape (65, 240, 240, 1)  loop_counter = 62992
+# Epoch: 150/150... Training loss: 0.1439
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_008_002.mp4
+# video number = 412 ..... batch_x.shape (50, 240, 240, 1)  loop_counter = 62993
+# Epoch: 150/150... Training loss: 0.1222
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_008_003.mp4
+# video number = 413 ..... batch_x.shape (100, 240, 240, 1)  loop_counter = 62994
+# Epoch: 150/150... Training loss: 0.0997
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_009_001.mp4
+# video number = 414 ..... batch_x.shape (77, 240, 240, 1)  loop_counter = 62995
+# Epoch: 150/150... Training loss: 0.0890
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_009_002.mp4
+# video number = 415 ..... batch_x.shape (29, 240, 240, 1)  loop_counter = 62996
+# Epoch: 150/150... Training loss: 0.0772
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_009_003.mp4
+# video number = 416 ..... batch_x.shape (37, 240, 240, 1)  loop_counter = 62997
+# Epoch: 150/150... Training loss: 0.0757
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_010_001.mp4
+# video number = 417 ..... batch_x.shape (28, 240, 240, 1)  loop_counter = 62998
+# Epoch: 150/150... Training loss: 0.1068
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_010_002.mp4
+# video number = 418 ..... batch_x.shape (16, 240, 240, 1)  loop_counter = 62999
+# Epoch: 150/150... Training loss: 0.1012
+# video_path /home/jai/Desktop/Thesis2/data/videos/bg_train_data/14/014_010_003.mp4
+# video number = 419 ..... batch_x.shape (22, 240, 240, 1)  loop_counter = 63000
+# Epoch: 150/150... Training loss: 0.0979
+
+
+# Took 3 days to run 150 epochs in 420 videos
+# Total Execution Time = 261215.2322230339 seconds
+# One Epoch took 1430.91 seconds
