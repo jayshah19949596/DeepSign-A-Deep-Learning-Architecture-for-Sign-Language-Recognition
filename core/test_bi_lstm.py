@@ -91,20 +91,6 @@ def get_encoded_embeddings(logs_path):
     return x, encoded
 
 
-def write_summaries(model_object, validation_acc, loss):
-    # ================================================
-    # Create a summary to monitor training loss tensor
-    # ================================================
-    tf.summary.scalar("loss", loss)
-
-    # ================================================
-    # Create a summary to monitor validation accuracy
-    # ================================================
-    tf.summary.scalar("validation_accuracy", validation_acc)
-
-    return tf.summary.merge_all()
-
-
 def test():
     encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
     bi_lstm_logs_path = cs.BASE_LOG_PATH + cs.MODEL_BI_LSTM

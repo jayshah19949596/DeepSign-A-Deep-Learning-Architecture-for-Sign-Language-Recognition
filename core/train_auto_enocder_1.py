@@ -37,7 +37,13 @@ def iterate_videos(path, input_format):
 
 
 def get_batch(video_path):
-    # batch_x = utility.prepare_batch_frames(video_path)
+    """
+
+    :param video_path: string
+                       path to video from which the batch has to be prepared
+    :return: batch_x: numpy array object of shape (batch_size, height, width, d1)
+                      array which contains set of frames read from the video
+    """
     batch_x = utility.prepare_batch_frames_from_bg_data(video_path)
     return batch_x
 
@@ -56,6 +62,14 @@ def display_reconstruction_results(test_frame, reconstructed):
 
 
 def write_summaries(model_object):
+    """
+       Creates the necessary 'Summary' protobuf for evaluating our model on tensor-board
+
+       :param model_object: instance of ConvAutoEncoder1
+
+       :return full_path: returns a scalar `Tensor` of type `string`
+                          contains all the serialized `Summary` protocol buffer resulting from the merging.
+    """
     # Create a summary to monitor training loss tensor
     tf.summary.scalar("loss", tf.reduce_mean(model_object.loss))
 
@@ -78,16 +92,21 @@ def write_summaries(model_object):
 
 
 def train():
-    loading = False
-    logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
+    """ This function builds the graph and performs the training """
+
+    epochs = 150  # epochs: Number of iterations for which training will be performed
+    loading = False  # loading : flag for loading an already trained model
+    logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1  # logs_path : path to store checkpoint and summary events
     tf.reset_default_graph()
     cae = ConVAE()
     cae.build_model()
-    epochs = 150
     merged_summary_op = write_summaries(cae)
     sess = tf.Session()
     saver = tf.train.Saver(max_to_keep=10)
 
+    # =======================================================================
+    # If loading flag is true then load the latest model form the logs_path
+    # =======================================================================
     if loading:
         sess.run(tf.global_variables_initializer())
         saver.restore(sess, tf.train.latest_checkpoint(logs_path))
@@ -118,7 +137,6 @@ def train():
             batch_x = get_batch(video_path)
 
             if batch_x is None:
-                # print("video_path", video_path)
                 continue
 
             else:
@@ -163,7 +181,6 @@ def train():
     # =========================
     # Freeze the session graph
     # =========================
-    # freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path), cae)
     cae.process_node_names()
     utility.freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path),
                          cae, "encoder_train.pb", cs.ENCODER1_FREEZED_PB_NAME)
@@ -173,6 +190,9 @@ def train():
 
     path_generator = os_utils.iterate_test_data(cs.BASE_DATA_PATH+cs.DATA_BG_TRAIN_VIDEO, "mp4")
 
+    # ==============================================================
+    # Now testing the performance of our model on an unknown data
+    # ==============================================================
     for video_path in path_generator:
         test_frame = get_batch(video_path)
 
@@ -185,17 +205,6 @@ def train():
             break
 
     sess.close()
-
-
-def parse_arguments(argv):
-    parser = argparse.ArgumentParser()
-
-    parser.add_argument('epochs', type=int,
-                        help="Number epochs for which the model is to be trained", default=100)
-    parser.add_argument('loading', type=bool,
-                        help="Load a pre-trained model or train from scratch", default=False)
-
-    return parser.parse_args(argv)
 
 
 if __name__ == '__main__':

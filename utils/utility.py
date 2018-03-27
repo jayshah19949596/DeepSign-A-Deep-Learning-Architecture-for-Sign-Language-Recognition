@@ -12,6 +12,24 @@ from tensorflow.python.tools import freeze_graph
 
 
 def freeze_model(sess, logs_path, latest_checkpoint, model, pb_file_name, freeze_pb_file_name):
+    """
+    :param sess     : tensor-flow session instance which creates the all graph information
+
+    :param logs_path: string
+                      directory path where the checkpoint files are stored
+
+    :param latest_checkpoint: string
+                              checkpoint file path
+
+    :param model: model instance for extracting the nodes explicitly
+
+    :param pb_file_name: string
+                         Name of trainable pb file where the graph and weights will be stored
+
+    :param freeze_pb_file_name: string
+                                Name of freeze pb file where the graph and weights will be stored
+
+    """
     print("logs_path =", logs_path)
     tf.train.write_graph(sess.graph.as_graph_def(), logs_path, pb_file_name)
     input_graph_path = os.path.join(logs_path, pb_file_name)
@@ -69,6 +87,22 @@ def prepare_batch_frames(video_path):
 
 
 def prepare_batch_frames_from_bg_data(video_path, frame_limit=109, resize=(240, 240)):
+    """
+
+    This function prepares batches by reading the video and extracting
+    frames which is used as one mini-batch in training
+
+    :param video_path: string
+                       path to video which is to be read
+
+    :param frame_limit: int
+                        limiting the number frames which is to be returned
+                        if the number of frames in the video is > frame_limit
+                        then random sampling will be carried out to extract frames exactly of frame_limit
+    :param resize: tuple of shape 2 elements
+                   resizing the frames
+    :return: frame_batch : numpy array of shape (batch_size, height, width, 1)
+    """
     sampling = False
     video = imageio.get_reader(video_path, 'ffmpeg')
     frame_batch = np.zeros(resize)
@@ -99,6 +133,13 @@ def prepare_batch_frames_from_bg_data(video_path, frame_limit=109, resize=(240, 
 
 
 def load_a_frozen_model(path_to_ckpt):
+    """
+
+    :param path_to_ckpt: string
+                         checkpoint file which contains the graph information to be loaded
+    :return: detection_graph : tf.Graph() object
+                             : the graph information from ckpt files is loaded into this tf.Graph() object
+    """
     detection_graph = tf.Graph()
     with detection_graph.as_default():
         od_graph_def = tf.GraphDef()
@@ -169,7 +210,7 @@ def run_inference_for_single_image(image, graph):
                 # The following processing is only for single image
                 detection_boxes = tf.squeeze(tensor_dict['detection_boxes'], [0])
                 detection_masks = tf.squeeze(tensor_dict['detection_masks'], [0])
-                # Reframe is required to translate mask from box coordinates to image coordinates and fit the image size.
+                # Reframe is required to translate mask from box coordinates to image coordinates and fit image size.
                 real_num_detection = tf.cast(tensor_dict['num_detections'][0], tf.int32)
                 detection_boxes = tf.slice(detection_boxes, [0, 0], [real_num_detection, -1])
                 detection_masks = tf.slice(detection_masks, [0, 0, 0], [real_num_detection, -1, -1])
@@ -258,7 +299,7 @@ def conv_layer(x, filter_w, in_d, out_d, is_relu, mu=0.0, sigma=0.1):
 
 # def apply_inception(x, in_d, out_d, name):
 def apply_inception(x, in_d, out_d):
-
+    """ This function implements the one inception layer with reduced dimensionality """
     d_1x1 = 32
     conv1x1 = conv_layer(x, 1, in_d, out_d, True)
     conv2 = conv_layer(x, 1, in_d, d_1x1, True)

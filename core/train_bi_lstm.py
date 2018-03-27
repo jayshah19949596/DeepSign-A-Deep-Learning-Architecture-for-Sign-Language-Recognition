@@ -11,14 +11,13 @@ from utils import utility, os_utils, cv_utils
 from sklearn.preprocessing import OneHotEncoder
 
 
-def get_batch(video_path, all_frame):
+def get_batch(video_path):
     # batch_x = cv_utils.prepare_batch_frames(video_path, all_frame=all_frame)
     batch_x = utility.prepare_batch_frames_from_bg_data(video_path=video_path, frame_limit=50)
     return batch_x
 
 
 def get_target_name(video_path):
-    # print(video_path)
     split_path = video_path.split(cs.SLASH)
     # print(int(split_path[-1][0:3]))
     return int(split_path[-1][0:3])
@@ -48,7 +47,15 @@ def get_label_enocder(path_gen):
 
 
 def get_encoded_embeddings(logs_path):
+    """
 
+    :param logs_path: string
+                      encoder logs path which contains the frozen protobuf file
+    :return: x: input tensor
+
+    :return: encoded: hidden representation tensor
+
+    """
     frozen_graph_filename = logs_path + cs.ENCODER1_FREEZED_PB_NAME
 
     with gfile.FastGFile(frozen_graph_filename, "rb") as f:
@@ -70,7 +77,7 @@ def get_encoded_embeddings(logs_path):
     return x, encoded
 
 
-def write_summaries(model_object, validation_acc, loss):
+def write_summaries(validation_acc, loss):
     # ================================================
     # Create a summary to monitor training loss tensor
     # ================================================
@@ -95,7 +102,9 @@ def train():
 
     graph = tf.Graph()
 
+    # ======================
     # Add nodes to the graph
+    # ======================
     with graph.as_default():
         val_acc = tf.Variable(0.0, tf.float32)
         tot_loss = tf.Variable(0.0, tf.float32)
@@ -107,8 +116,11 @@ def train():
 
     label_encoder, num_classes = get_label_enocder(path_generator)
 
+    # =================================
+    # Essential for creating summaries
+    # =================================
     with graph.as_default():
-        merged_summary_op = write_summaries(rnn, val_acc, tot_loss)
+        merged_summary_op = write_summaries(val_acc, tot_loss)
         summary_writer = tf.summary.FileWriter(logs_path, graph=graph)
         summary_writer.add_graph(graph)
         saver = tf.train.Saver(max_to_keep=4)
@@ -131,7 +143,7 @@ def train():
             batch_counter = 0
             for video_path in path_generator:
 
-                batch_x = get_batch(video_path, True)
+                batch_x = get_batch(video_path)
                 batch_y = get_target_name(video_path)
 
                 if batch_x is None:
