@@ -71,7 +71,7 @@ class ConVAE(object):
             # conv1 = (?, 240, 240, 16)
             # ===============================
             conv1 = tf.layers.conv2d(inputs_, 16, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv1")
-            inception_1 = utility.apply_inception(conv1, 16, 16)
+            inception_1 = utility.apply_inception(conv1, 16, 4)
 
             # ===============================
             # maxpool1 = (?, 120, 120, 16)
@@ -79,10 +79,9 @@ class ConVAE(object):
             maxpool1 = tf.layers.max_pooling2d(inception_1, (2, 2), (2, 2), padding='same', name="maxpool1")
 
             # ===============================
-            # conv2 = (?, 120, 120, 8)
+            # inception_2 = (?, 120, 120, 8)
             # ===============================
-            conv2 = tf.layers.conv2d(maxpool1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv2")
-            inception_2 = utility.apply_inception(conv2, 8, 8)
+            inception_2 = utility.apply_inception(maxpool1, 16, 2)
 
             # ===============================
             # maxpool2 = (?, 60, 60, 8)
@@ -90,14 +89,14 @@ class ConVAE(object):
             maxpool2 = tf.layers.max_pooling2d(inception_2, (2, 2), (2, 2), padding='same', name="maxpool2")
 
             # ===============================
-            # conv3 = (?, 60, 60, 8)
+            # inception_3 = (?, 60, 60, 8)
             # ===============================
-            conv3 = tf.layers.conv2d(maxpool2, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv3")
+            inception_3 = utility.apply_inception(maxpool2, 8, 2)
 
             # ===============================
             # maxpool3 = (?, 30, 30, 8)
             # ===============================
-            maxpool3 = tf.layers.max_pooling2d(conv3, (2, 2), (2, 2), padding='same', name="maxpool3")
+            maxpool3 = tf.layers.max_pooling2d(inception_3, (2, 2), (2, 2), padding='same', name="maxpool3")
 
             # ===========================================
             # Flattening maxpool3 and encoded = (?, 1024)
@@ -107,17 +106,16 @@ class ConVAE(object):
             self.z_mean = tf.layers.dense(dense_1, self.n_z, activation=tf.nn.relu, name="z_mean")
             self.z_stddev = tf.layers.dense(dense_1, self.n_z, activation=tf.nn.relu, name="z_stddev")
 
-            self.nodes = [conv1.name, inception_1.name, maxpool1.name, conv2.name, inception_2.name,
-                          maxpool2.name, conv3.name, maxpool3.name, self.z_mean.name, self.z_stddev.name]
+            self.nodes = [conv1.name, inception_1.name, maxpool1.name, inception_2.name,
+                          maxpool2.name, inception_3.name, maxpool3.name, self.z_mean.name, self.z_stddev.name]
 
             if self.summary:
                 print(conv1.name, "=", conv1.shape)
-                print(inception_2.name, "=", inception_1.shape)
+                print(inception_1.name, "=", inception_1.shape)
                 print(maxpool1.name, "=", maxpool1.shape)
-                print(conv2.name, "=", conv2.shape)
                 print(inception_2.name, "=", inception_2.shape)
                 print(maxpool2.name, "=", maxpool2.shape)
-                print(conv3.name, "=", conv3.shape)
+                print(inception_3.name, "=", inception_3.shape)
                 print(maxpool3.name, "=", maxpool3.shape)
                 print(dense_1.name, "=", dense_1.shape)
                 print(self.z_mean.name, "=", self.z_mean.shape)
@@ -146,32 +144,36 @@ class ConVAE(object):
             # ========================
             #  conv4 = (?, 30, 30, 8)
             # ========================
-            conv4 = tf.layers.conv2d(reshape1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv4")
+            inception_4 = utility.apply_inception(reshape1, 8, 2)
+            # conv4 = tf.layers.conv2d(reshape1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv4")
 
             # ==============================
             #  up_sample1 = (?, 60, 60, 8)
             # ==============================
-            up_sample1 = tf.image.resize_nearest_neighbor(conv4, (60, 60), name="upsample1")
+            up_sample1 = tf.image.resize_nearest_neighbor(inception_4, (60, 60), name="upsample1")
 
             # ==============================
             #  conv5 = (?, 120, 120, 8)
             # ==============================
-            conv5 = tf.layers.conv2d(up_sample1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv5")
+            inception_5 = utility.apply_inception(up_sample1, 8, 2)
+            # conv5 = tf.layers.conv2d(up_sample1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv5")
 
             # ==============================
             #  up_sample2 = (?, 120, 120, 8)
             # ==============================
-            up_sample2 = tf.image.resize_nearest_neighbor(conv5, (120, 120), name="upsample2")
+            up_sample2 = tf.image.resize_nearest_neighbor(inception_5, (120, 120), name="upsample2")
 
             # ==============================
             #  conv6 = (?, 120, 120, 16)
             # ==============================
-            conv6 = tf.layers.conv2d(up_sample2, 16, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv6")
+            inception_6 = utility.apply_inception(up_sample2, 8, 2)
+            # conv6 = tf.layers.conv2d(up_sample2, 16, (3, 3), padding='same',
+            #                          activation=tf.nn.leaky_relu, name="conv6")
 
             # ==============================
             #  up_sample3 = (?, 240, 240, 16)
             # ==============================
-            up_sample3 = tf.image.resize_nearest_neighbor(conv6, (240, 240), name="upsample3")
+            up_sample3 = tf.image.resize_nearest_neighbor(inception_6, (240, 240), name="upsample3")
 
             # ==============================
             #  conv7 = (?, 240, 240, 16)
@@ -181,8 +183,8 @@ class ConVAE(object):
             logits = tf.layers.conv2d(conv7, 1, (3, 3), padding='same', activation=tf.nn.sigmoid, name="logits")
             self.decoded = logits
 
-            self.nodes += [dense_2.name, reshape1.name, conv4.name, up_sample1.name,
-                           conv5.name, up_sample2.name, conv6.name]
+            self.nodes += [dense_2.name, reshape1.name, inception_4.name, up_sample1.name,
+                           inception_5.name, up_sample2.name, inception_6.name]
 
             self.nodes += [up_sample3.name, conv7.name, logits.name]
 
@@ -191,11 +193,11 @@ class ConVAE(object):
                 print(dense_2.name, "=", dense_2.shape)
                 print(dense_3.name, "=", dense_3.shape)
                 print(reshape1.name, "=", reshape1.shape)
-                print(conv4.name, "=", conv4.shape)
+                print(inception_4.name, "=", inception_4.shape)
                 print(up_sample1.name, "=", up_sample1.shape)
-                print(conv5.name, "=", conv5.shape)
+                print(inception_5.name, "=", inception_5.shape)
                 print(up_sample2.name, " =", up_sample2.shape)
-                print(conv6.name, "=", conv6.shape)
+                print(inception_6.name, "=", inception_6.shape)
                 print(up_sample3.name, "=", up_sample3.shape)
                 print(conv7.name, "=", conv7.shape)
                 print(logits.name, "=", logits.shape)

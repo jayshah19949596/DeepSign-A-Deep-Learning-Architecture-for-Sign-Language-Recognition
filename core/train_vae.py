@@ -38,7 +38,14 @@ def iterate_videos(path, input_format):
 
 
 def get_batch(video_path):
-    batch_x = utility.prepare_batch_frames(video_path)
+    """
+
+    :param video_path: string
+                       path to video from which the batch has to be prepared
+    :return: batch_x: numpy array object of shape (batch_size, height, width, d1)
+                      array which contains set of frames read from the video
+    """
+    batch_x = utility.prepare_batch_frames_from_bg_data(video_path, frame_limit=80)
     return batch_x
 
 
@@ -83,7 +90,7 @@ def train():
     tf.reset_default_graph()
     vae = ConVAE()
     vae.build_model()
-    epochs = 12
+    epochs = 151
     noise = 0.8
     merged_summary_op = write_summaries(vae)
     sess = tf.Session()
@@ -107,9 +114,8 @@ def train():
     loop_counter = 1
 
     for e in tqdm(range(checkpoint_number, checkpoint_number+epochs)):
-        print()
-        path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH+cs.DATA_TRAIN_VIDEOS, "mp4")
-        batch_counter = 1
+        path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH+cs.DATA_BG_TRAIN_VIDEO, "mp4")
+        batch_counter = 0
         start_time = time.time()
 
         for video_path in path_generator:
@@ -149,7 +155,7 @@ def train():
 
             batch_counter += 1
             loop_counter += 1
-            if batch_counter == 2:
+            if batch_counter == 420:
                 end_time = time.time()
                 print("==============================================================================================")
                 print("Epoch Number", e, "has ended in", end_time-start_time, "seconds for", batch_counter, "videos")
@@ -169,12 +175,12 @@ def train():
     # =========================
     # freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path), cae)
     utility.freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path),
-                         vae, "encoder_train.pb", cs.VAE_FREEZED_PB_NAME)
+                         vae, "vae_train.pb", cs.VAE_FREEZED_PB_NAME)
 
     print("Run the command line:\n--> tensorboard --logdir={}".format(logs_path),
           "\nThen open http://0.0.0.0:6006/ into your web browser")
 
-    path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH, "mp4")
+    path_generator = os_utils.iterate_test_data(cs.BASE_DATA_PATH+cs.DATA_BG_TRAIN_VIDEO, "mp4")
 
     for video_path in path_generator:
         test_frame = get_batch(video_path)

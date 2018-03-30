@@ -87,7 +87,10 @@ def write_summaries(validation_acc, loss):
 def train():
     epochs = 50
     sampling_number = 70
-    encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
+
+    # encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
+    encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_VAE
+
     path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH + cs.DATA_BG_TRAIN_VIDEO, "mp4")
     logs_path = cs.BASE_LOG_PATH + cs.MODEL_LSTM
     checkpoint_number = 0
@@ -178,9 +181,9 @@ def train():
                           "total loss is = {:.3f}".format(total_loss),
                           "validation accuracy is = {}".format(100*(validation_accuracy / len(sampling_list))))
                     print("===========================================================================================")
-                    feed = {val_acc: validation_accuracy/len(sampling_list), tot_loss: total_loss}
-                    summary = sess.run(merged_summary_op, feed_dict=feed)
-                    summary_writer.add_summary(summary, e)
+                    # feed = {val_acc: validation_accuracy/len(sampling_list), tot_loss: total_loss}
+                    # summary = sess.run(merged_summary_op, feed_dict=feed)
+                    # summary_writer.add_summary(summary, e)
 
                     break
 
@@ -189,8 +192,8 @@ def train():
                 print("saving the model at epoch", checkpoint_number + loop_counter)
                 print("################################################")
 
-                saver.save(sess, os.path.join(logs_path, 'lstm_loop_count_{}.ckpt'
-                                              .format(checkpoint_number + loop_counter)))
+                # saver.save(sess, os.path.join(logs_path, 'lstm_loop_count_{}.ckpt'
+                #                               .format(checkpoint_number + loop_counter)))
 
     print("Run the command line:\n--> tensorboard --logdir={}".format(logs_path),
           "\nThen open http://0.0.0.0:6006/ into your web browser")
