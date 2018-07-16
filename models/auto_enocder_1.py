@@ -15,7 +15,7 @@ class ConvAutoEncoder1(object):
 
     def build_model(self):
         encoded = self.encoder(self.inputs_)
-        logits = self.decoder(encoded)
+        logits = self.decoder_1(encoded)
         self.loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=self.targets_, logits=logits)
         self.loss = tf.reduce_mean(self.loss)
         self.opt = tf.train.AdamOptimizer(0.001).minimize(self.loss)
@@ -24,8 +24,9 @@ class ConvAutoEncoder1(object):
     def process_node_names(self):
         print("===================================")
         for i in range(len(self.nodes)):
-            node_name, node_number = self.nodes[i].split(":")
-            self.nodes[i] = node_name
+            # print("self.nodes[i] =", self.nodes[i])
+            current_node = self.nodes[i].split(":")
+            self.nodes[i] = current_node[0]
 
         print(",".join(self.nodes))
 
@@ -125,7 +126,7 @@ class ConvAutoEncoder1(object):
                 conv5 = tf.layers.conv2d(up_sample1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv5")
 
                 # ==============================
-                #  upsample2 = (?, 120, 120, 8)
+                #  up_sample2 = (?, 120, 120, 8)
                 # ==============================
                 up_sample2 = tf.image.resize_nearest_neighbor(conv5, (120, 120), name="upsample2")
 
@@ -160,6 +161,91 @@ class ConvAutoEncoder1(object):
                     print(conv7.name, "=", conv7.shape)
                     print(logits.name, "=", logits.shape)
                     print(self.decoded.name, "=", self.decoded.shape)
+
+        return logits
+
+    def decoder_1(self, encoded):
+
+        # ======================
+        #       Decoder
+        # ======================
+        with tf.variable_scope('decoder'):
+            # ======================================
+            #  dense_2 = (?, 512) --> (?, 1024)
+            # ======================================
+            dense_2 = tf.layers.dense(encoded, 1024, activation=tf.nn.leaky_relu, name="dense_2")
+
+            # ======================================
+            #  dense_3 = (?, 1113) --> (?, 7200)
+            # ======================================
+            dense_3 = tf.layers.dense(dense_2, 30 * 30 * 8, activation=tf.nn.leaky_relu, name="dense_3")
+
+            # ========================
+            # dense1 = (?, 30, 30, 8)
+            # ========================
+            reshape1 = tf.reshape(dense_3, (-1, 30, 30, 8), name="reshaped")
+
+            # ========================
+            #  conv4 = (?, 30, 30, 8)
+            # ========================
+            inception_4 = utility.apply_inception(reshape1, 8, 2)
+            # conv4 = tf.layers.conv2d(reshape1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv4")
+
+            # ==============================
+            #  up_sample1 = (?, 60, 60, 8)
+            # ==============================
+            up_sample1 = tf.image.resize_nearest_neighbor(inception_4, (60, 60), name="upsample1")
+
+            # ==============================
+            #  conv5 = (?, 120, 120, 8)
+            # ==============================
+            inception_5 = utility.apply_inception(up_sample1, 8, 2)
+            # conv5 = tf.layers.conv2d(up_sample1, 8, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv5")
+
+            # ==============================
+            #  up_sample2 = (?, 120, 120, 8)
+            # ==============================
+            up_sample2 = tf.image.resize_nearest_neighbor(inception_5, (120, 120), name="upsample2")
+
+            # ==============================
+            #  conv6 = (?, 120, 120, 16)
+            # ==============================
+            inception_6 = utility.apply_inception(up_sample2, 8, 2)
+            # conv6 = tf.layers.conv2d(up_sample2, 16, (3, 3), padding='same',
+            #                          activation=tf.nn.leaky_relu, name="conv6")
+
+            # ==============================
+            #  up_sample3 = (?, 240, 240, 16)
+            # ==============================
+            up_sample3 = tf.image.resize_nearest_neighbor(inception_6, (240, 240), name="upsample3")
+
+            # ==============================
+            #  conv7 = (?, 240, 240, 16)
+            # ==============================
+            conv7 = tf.layers.conv2d(up_sample3, 16, (3, 3), padding='same', activation=tf.nn.leaky_relu, name="conv7")
+
+            logits = tf.layers.conv2d(conv7, 1, (3, 3), padding='same', activation=None, name="logits")
+            self.decoded = tf.nn.sigmoid(logits, name='decoded')
+
+            self.nodes += [dense_2.name, reshape1.name, inception_4.name, up_sample1.name,
+                           inception_5.name, up_sample2.name, inception_6.name]
+
+            self.nodes += [up_sample3.name, conv7.name, logits.name]
+
+            if self.summary:
+                print("encoded", encoded.shape)
+                print(dense_2.name, "=", dense_2.shape)
+                print(dense_3.name, "=", dense_3.shape)
+                print(reshape1.name, "=", reshape1.shape)
+                print(inception_4.name, "=", inception_4.shape)
+                print(up_sample1.name, "=", up_sample1.shape)
+                print(inception_5.name, "=", inception_5.shape)
+                print(up_sample2.name, " =", up_sample2.shape)
+                print(inception_6.name, "=", inception_6.shape)
+                print(up_sample3.name, "=", up_sample3.shape)
+                print(conv7.name, "=", conv7.shape)
+                print(logits.name, "=", logits.shape)
+                # self.process_node_names()
 
         return logits
 

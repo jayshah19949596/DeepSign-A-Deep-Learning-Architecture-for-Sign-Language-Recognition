@@ -10,9 +10,12 @@ from utils import utility
 import utils.constants as cs
 from models.vae import ConVAE
 import matplotlib.pyplot as plt
+from skimage.feature import hog
 from utils import os_utils, cv_utils
 from tensorflow.python.tools import freeze_graph
 
+image = np.zeros((10, 10, 3))
+fd, hog_image = hog(image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1), visualise=True, multichannel=True)
 
 def iterate_videos(path, input_format):
     """

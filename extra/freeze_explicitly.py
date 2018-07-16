@@ -1,6 +1,6 @@
 import tensorflow as tf
 from utils import utility
-from models.vae import ConVAE
+from models.auto_enocder_1 import ConvAutoEncoder1
 from utils import constants as cs
 from tensorflow.python.platform import gfile
 
@@ -11,18 +11,19 @@ def freeze(session, model_path, model, pb_file, freeze_file):
 
 
 if __name__ == "__main__":
-    logs_path = cs.BASE_LOG_PATH + cs.MODEL_VAE
+    # logs_path = cs.BASE_LOG_PATH + cs.MODEL_VAE
+    logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
 
-    vae = ConVAE()
-    vae.build_model()
+    cae = ConvAutoEncoder1()
+    cae.build_model()
 
     saver = tf.train.Saver(max_to_keep=10)
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
     saver.restore(sess, tf.train.latest_checkpoint(logs_path))
     latest_checkpoint_path = tf.train.latest_checkpoint(logs_path)
-
-    freeze(sess, logs_path, vae, "vae_train.pb", cs.VAE_FREEZED_PB_NAME)
+    cae.process_node_names()
+    freeze(sess, logs_path, cae, "encoder_train.pb", cs.ENCODER1_FREEZED_PB_NAME)
 
     # frozen_graph_filename = logs_path + cs.VAE_FREEZED_PB_NAME
     #

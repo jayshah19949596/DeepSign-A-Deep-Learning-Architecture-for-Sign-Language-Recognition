@@ -43,7 +43,7 @@ class RecurrentNetwork(object):
     def build_cost(self, predictions):
         self.y_one_hot = tf.one_hot(self.targets_, self.output_nodes)
         self.y_one_hot = tf.reshape(self.y_one_hot, predictions.get_shape(), name="lstm_y_one_hot")
-        self.loss = tf.nn.softmax_cross_entropy_with_logits_v2(logits=predictions, labels=self.y_one_hot)
+        self.loss = tf.nn.softmax_cross_entropy_with_logits(logits=predictions, labels=self.y_one_hot)
         self.loss = tf.reduce_mean(self.loss)
         self.nodes = [self.inputs_.name, self.targets_.name, self.predictions.name, self.y_one_hot.name]
 

@@ -13,7 +13,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 def get_batch(video_path, all_frame):
     # batch_x = cv_utils.prepare_batch_frames(video_path, all_frame=all_frame)
-    batch_x = utility.prepare_batch_frames_from_bg_data(video_path)
+    batch_x = utility.prepare_batch_frames_from_bg_data(video_path=video_path, frame_limit=120)
     return batch_x
 
 
@@ -92,6 +92,7 @@ def get_encoded_embeddings(logs_path):
 
 
 def test():
+    config = tf.ConfigProto(device_count={'CPU': 1})
     encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
     bi_lstm_logs_path = cs.BASE_LOG_PATH + cs.MODEL_BI_LSTM
     path_generator = os_utils.iterate_test_data(cs.BASE_DATA_PATH + cs.DATA_BG_TEST_VIDEO, "mp4")
@@ -111,7 +112,7 @@ def test():
     label_encoder, num_classes = get_label_enocder(path_generator)
     path_generator = os_utils.iterate_test_data(cs.BASE_DATA_PATH + cs.DATA_BG_TEST_VIDEO, "mp4")
 
-    with tf.Session(graph=graph) as sess:
+    with tf.Session(graph=graph, config=config) as sess:
         saver.restore(sess, tf.train.latest_checkpoint(bi_lstm_logs_path))
         state_fw = sess.run(rnn.initial_state_fw)
         state_bw = sess.run(rnn.initial_state_bw)
@@ -126,7 +127,7 @@ def test():
 
             feed = {rnn.inputs_: encoded_batch,
                     rnn.targets_: label_encoder.transform([batch_y]),
-                    rnn.keep_prob: 0.5,
+                    rnn.keep_prob: 1.0,
                     rnn.initial_state_fw: state_fw,
                     rnn.initial_state_bw: state_bw}
 
@@ -139,7 +140,7 @@ def test():
             print(probabilities_3[1][0])
             print(probabilities_5[1][0])
             print(batch_y - 1)
-
+            print(video_path)
             if batch_y - 1 in probabilities_1[1][0]:
                 accuracy_1 += 1
                 print("accuracy_1 =", accuracy_1)
@@ -154,10 +155,13 @@ def test():
             loop_count += 1
 
             print("==============================", loop_count, "=================================")
-
-    print(accuracy_1, 100 * accuracy_1 / 280)
-    print(accuracy_3, 100 * accuracy_3 / 280)
-    print(accuracy_5, 100 * accuracy_5 / 280)
+    #
+    # print(accuracy_1, 100 * accuracy_1 / 280)
+    # print(accuracy_3, 100 * accuracy_3 / 280)
+    # print(accuracy_5, 100 * accuracy_5 / 280)
+    print(accuracy_1, 100 * accuracy_1 / loop_count)
+    print(accuracy_3, 100 * accuracy_3 / loop_count)
+    print(accuracy_5, 100 * accuracy_5 / loop_count)
 
 
 if __name__ == "__main__":

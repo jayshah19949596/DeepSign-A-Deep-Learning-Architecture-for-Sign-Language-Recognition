@@ -118,7 +118,7 @@ def train():
     accuracy_5 = 0
 
     with graph.as_default():
-        rnn = RecurrentNetwork(lstm_size=128, batch_len=BATCH_SIZE, output_nodes=14, keep_prob=0.85,
+        rnn = RecurrentNetwork(lstm_size=128, batch_len=BATCH_SIZE, output_nodes=14,
                                learning_rate=0.001)
         rnn.build_model()
         stage_1_ip, stage_2_ip = get_encoded_embeddings(encoder_logs_path)

@@ -13,7 +13,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 def get_batch(video_path):
     # batch_x = cv_utils.prepare_batch_frames(video_path, all_frame=all_frame)
-    batch_x = utility.prepare_batch_frames_from_bg_data(video_path=video_path, frame_limit=50)
+    batch_x = utility.prepare_batch_frames_from_bg_data(video_path=video_path, frame_limit=120)
     return batch_x
 
 
@@ -92,8 +92,8 @@ def write_summaries(validation_acc, loss):
 
 
 def train():
-    epochs = 51
-    sampling_number = 70
+    epochs = 101
+    sampling_number = 150
     encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
     path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH+cs.DATA_BG_TRAIN_VIDEO, "mp4")
     logs_path = cs.BASE_LOG_PATH + cs.MODEL_BI_LSTM
@@ -115,7 +115,6 @@ def train():
         prediction = tf.argmax(rnn.predictions, 1)
 
     label_encoder, num_classes = get_label_enocder(path_generator)
-
     # =================================
     # Essential for creating summaries
     # =================================
@@ -131,7 +130,7 @@ def train():
         iteration = 1
         tf.get_default_graph().finalize()
         for e in range(epochs):
-            sampling_list = random.sample(range(0, 419), sampling_number)
+            sampling_list = random.sample(range(0, 634), sampling_number)
             start_time = time.time()
             total_loss = 0
             validation_accuracy = 0
@@ -184,8 +183,8 @@ def train():
                 batch_counter += 1
                 loop_counter += 1
 
-                if batch_counter == 420:
-                    total_loss = total_loss / 420
+                if batch_counter == 634:
+                    total_loss = total_loss / 634
                     end_time = time.time()
                     print("===========================================================================================")
                     print("Epoch Number", e, "has ended in", end_time - start_time, "seconds for", batch_counter,
@@ -199,7 +198,7 @@ def train():
 
                     break
 
-            if e % 2 == 0:
+            if e % 10 == 0:
                 print("################################################")
                 print("saving the model at epoch", checkpoint_number + loop_counter)
                 print("################################################")

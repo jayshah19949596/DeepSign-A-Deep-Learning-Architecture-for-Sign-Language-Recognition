@@ -13,7 +13,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 def get_batch(video_path):
     # batch_x = cv_utils.prepare_batch_frames(video_path, all_frame=all_frame)
-    batch_x = utility.prepare_batch_frames_from_bg_data(video_path=video_path, frame_limit=50)
+    batch_x = utility.prepare_batch_frames_from_bg_data(video_path=video_path, frame_limit=80)
     return batch_x
 
 
@@ -49,7 +49,15 @@ def get_label_enocder(path_gen):
 
 def get_encoded_embeddings(logs_path):
 
-    frozen_graph_filename = logs_path + cs.ENCODER1_FREEZED_PB_NAME
+    # ==================================
+    #  Below is for Variational Encoders
+    # ==================================
+    frozen_graph_filename = logs_path + cs.VAE_FREEZED_PB_NAME
+
+    # ===================================
+    #  Below is for Normal Auto-Encoders
+    # ==================================
+    # frozen_graph_filename = logs_path + cs.ENCODER1_FREEZED_PB_NAME
 
     with gfile.FastGFile(frozen_graph_filename, "rb") as f:
         graph_def = tf.GraphDef()
@@ -61,8 +69,18 @@ def get_encoded_embeddings(logs_path):
     tf.import_graph_def(graph_def, name='')
 
     detection_graph = tf.get_default_graph()
-    x = detection_graph.get_tensor_by_name('inputs:0')
-    encoded = detection_graph.get_tensor_by_name('encoder/encoded/LeakyRelu/Maximum:0')
+
+    # ===================================
+    #  Below is for Variational Encoders
+    # ==================================
+    x = detection_graph.get_tensor_by_name('vae_inputs:0')
+    encoded = detection_graph.get_tensor_by_name('add:0')
+
+    # ===================================
+    #  Below is for Normal Auto-Encoders
+    # ==================================
+    # x = detection_graph.get_tensor_by_name('inputs:0')
+    # encoded = detection_graph.get_tensor_by_name('encoder/encoded/LeakyRelu/Maximum:0')
 
     # embedding = sess.run(encoded, feed_dict={x: frame})
     # embedding = embedding.reshape((1, / len(sampling_list)embedding.shape[0], embedding.shape[1]))
@@ -88,11 +106,19 @@ def train():
     epochs = 50
     sampling_number = 70
 
-    # encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
-    encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_VAE
+    # ===================================
+    #  Below is for Variational Encoders
+    # ==================================
+    # encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_VAE
+    # logs_path = cs.BASE_LOG_PATH + cs.MODEL_LSTM_VAE
+
+    # ===================================
+    #  Below is for Normal Auto-Encoders
+    # ==================================
+    encoder_logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1
+    logs_path = cs.BASE_LOG_PATH + cs.MODEL_LSTM
 
     path_generator = os_utils.iterate_data(cs.BASE_DATA_PATH + cs.DATA_BG_TRAIN_VIDEO, "mp4")
-    logs_path = cs.BASE_LOG_PATH + cs.MODEL_LSTM
     checkpoint_number = 0
     loop_counter = 1
 
@@ -102,7 +128,7 @@ def train():
         val_acc = tf.Variable(0.0, tf.float32)
         tot_loss = tf.Variable(0.0, tf.float32)
 
-        rnn = RecurrentNetwork(lstm_size=128, batch_len=BATCH_SIZE, output_nodes=14, learning_rate=0.001)
+        rnn = RecurrentNetwork(lstm_size=128, batch_len=BATCH_SIZE, output_nodes=14, learning_rate=0.01)
         rnn.build_model()
         stage_1_ip, stage_2_ip = get_encoded_embeddings(encoder_logs_path)
         prediction = tf.argmax(rnn.predictions, 1)
@@ -160,7 +186,7 @@ def train():
                         validation_accuracy += 1
 
                 else:
-                    batch_loss, state, _ = sess.run([rnn.loss, rnn.final_state, rnn.optimizer], feed_dict=feed)
+                    batch_loss, state, _ = sess.run([rnn.cross_entropy, rnn.final_state, rnn.optimizer], feed_dict=feed)
 
                     total_loss += batch_loss
 
@@ -181,9 +207,9 @@ def train():
                           "total loss is = {:.3f}".format(total_loss),
                           "validation accuracy is = {}".format(100*(validation_accuracy / len(sampling_list))))
                     print("===========================================================================================")
-                    # feed = {val_acc: validation_accuracy/len(sampling_list), tot_loss: total_loss}
-                    # summary = sess.run(merged_summary_op, feed_dict=feed)
-                    # summary_writer.add_summary(summary, e)
+                    feed = {val_acc: validation_accuracy/len(sampling_list), tot_loss: total_loss}
+                    summary = sess.run(merged_summary_op, feed_dict=feed)
+                    summary_writer.add_summary(summary, e)
 
                     break
 
@@ -192,13 +218,13 @@ def train():
                 print("saving the model at epoch", checkpoint_number + loop_counter)
                 print("################################################")
 
-                # saver.save(sess, os.path.join(logs_path, 'lstm_loop_count_{}.ckpt'
-                #                               .format(checkpoint_number + loop_counter)))
+                saver.save(sess, os.path.join(logs_path, 'lstm_loop_count_{}.ckpt'
+                                              .format(checkpoint_number + loop_counter)))
 
     print("Run the command line:\n--> tensorboard --logdir={}".format(logs_path),
           "\nThen open http://0.0.0.0:6006/ into your web browser")
 
-    rnn.process_node_names()
+    # rnn.process_node_names()
     utility.freeze_model(sess, logs_path, tf.train.latest_checkpoint(logs_path),
                          rnn, "lstm_train.pb", cs.LSTM_FREEZED_PB_NAME)
 

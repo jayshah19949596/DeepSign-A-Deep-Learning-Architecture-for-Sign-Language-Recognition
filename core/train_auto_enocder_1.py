@@ -44,7 +44,7 @@ def get_batch(video_path):
     :return: batch_x: numpy array object of shape (batch_size, height, width, d1)
                       array which contains set of frames read from the video
     """
-    batch_x = utility.prepare_batch_frames_from_bg_data(video_path)
+    batch_x = utility.prepare_batch_frames_from_bg_data(video_path, frame_limit=100)
     return batch_x
 
 
@@ -94,7 +94,7 @@ def write_summaries(model_object):
 def train():
     """ This function builds the graph and performs the training """
 
-    epochs = 150  # epochs: Number of iterations for which training will be performed
+    epochs = 111  # epochs: Number of iterations for which training will be performed
     loading = False  # loading : flag for loading an already trained model
     logs_path = cs.BASE_LOG_PATH + cs.MODEL_CONV_AE_1  # logs_path : path to store checkpoint and summary events
     tf.reset_default_graph()
@@ -142,7 +142,7 @@ def train():
             else:
                 print("video_path", video_path)
                 print("video number =", batch_counter, "..... batch_x.shape", batch_x.shape,
-                      " loop_counter =", checkpoint_number + loop_counter)
+                      "loop_counter =", checkpoint_number + loop_counter)
 
                 batch_loss, _, summary = sess.run([cae.loss, cae.opt, merged_summary_op],
                                                   feed_dict={cae.inputs_: batch_x,
@@ -163,7 +163,7 @@ def train():
 
             batch_counter += 1
             loop_counter += 1
-            if batch_counter == 420:
+            if batch_counter == 634:
                 end_time = time.time()
                 print("==============================================================================================")
                 print("Epoch Number", e, "has ended in", end_time-start_time, "seconds for", batch_counter, "videos")
