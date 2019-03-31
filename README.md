@@ -1,5 +1,8 @@
 # ASL-Thesis2
 
+## Mdeium post
+https://medium.com/@jayshah_84248/deepsign-a-deep-learning-pipeline-for-sign-language-recognition-a51a8f116dfc
+
 ## core:
 
 - This is the folder where the training code is and the testing code is.  
