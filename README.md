@@ -1,4 +1,5 @@
-# ASL-Thesis2
+# DeepSign: A Deep Learning Architecture for Sign-Language-Recognition
+
 
 ## Medium post
 https://medium.com/@jayshah_84248/deepsign-a-deep-learning-pipeline-for-sign-language-recognition-a51a8f116dfc
