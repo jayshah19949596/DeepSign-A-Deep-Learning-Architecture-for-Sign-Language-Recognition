@@ -1,7 +1,10 @@
 # DeepSign: A Deep Learning Architecture for Sign-Language-Recognition
+DeepSign is a new deep-learning architecture which achieves comparable results with limited training data for Sign Language Recognition.
 
+## Paper Link
+https://rc.library.uta.edu/uta-ir/bitstream/handle/10106/27803/SHAH-THESIS-2018.pdf?sequence=1&isAllowed=y
 
-## Medium post
+## Medium Post
 https://medium.com/@jayshah_84248/deepsign-a-deep-learning-pipeline-for-sign-language-recognition-a51a8f116dfc
 
 ## core:
